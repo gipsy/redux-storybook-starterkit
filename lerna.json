@@ -1,0 +1,21 @@
+{
+  "lerna": "2.0.0",
+  "commands": {
+    "bootstrap": {
+      "ignore": [
+        "test-cra"
+      ]
+    },
+    "publish": {
+      "ignore": [
+        "test-cra",
+        "cra-kitchen-sink"
+      ]
+    }
+  },
+  "packages": [
+    "lib/*"
+  ],
+  "concurrency": 1,
+  "version": "0.0.1"
+}

@@ -6,10 +6,10 @@ import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import configureStore from 'store/configure'
 import api from 'services/api'
-import theme from 'components/themes/default'
+import theme from 'components/src/themes/default'
 
 const store = configureStore({}, { api: api.create() })
-const req = require.context('components', true, /.stories.js$/)
+const req = require.context('components/src', true, /.stories.js$/)
 
 function loadStories() {
   req.keys().forEach(filename => req(filename))

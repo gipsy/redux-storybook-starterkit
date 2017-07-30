@@ -12,7 +12,7 @@
     "danger": "danger pr",
     "postcoverage": "opn coverage/lcov-report/index.html",
     "lint": "npm run lint:js && npm run lint:md",
-    "lint:js": "eslint src private webpack.config.js --cache --cache-location=.cache/eslint --ext .js,.jsx,.json",
+    "lint:js": "eslint src,private webpack.config.js --cache --cache-location=.cache/eslint --ext .js,.jsx,.json",
     "lint:md": "remark .",
     "precommit": "lint-staged",
     "storybook": "start-storybook -p 9001 -c private/storybook",
@@ -25,7 +25,7 @@
     "prebuild": "npm run build:clean && npm run build:copy",
     "build": "npm run env:prod -- webpack",
     "bootstrap": "lerna bootstrap --concurrency 1 --npm-client=\"yarn\" --hoist && node private/scripts/hoist_internals.js",
-    "build-packs": "lerna exec --scope '@getdinghy/*' --parallel -- private/scripts/build_pack.sh packs",
+    "build-packs": "lerna exec --scope '@getdinghy/*' --parallel -- private/scripts/build_packs.sh packs",
     "publish_components": "lerna publish"
   },
   "jest": {

@@ -11,7 +11,7 @@ import { ServerStateProvider } from 'react-router-server'
 import { basename } from 'config'
 import configureStore from 'store/configure'
 import api from 'services/api'
-import App from 'components/App'
+import App from 'components/src/App'
 
 const serverState = window.__SERVER_STATE__
 const initialState = window.__INITIAL_STATE__
@@ -31,8 +31,8 @@ const root = document.getElementById('app')
 render(renderApp(), root)
 
 if (module.hot) {
-  module.hot.accept('components/App', () => {
-    require('components/App')
+  module.hot.accept('components/src/App', () => {
+    require('components/src/App')
     render(renderApp(), root)
   })
 }

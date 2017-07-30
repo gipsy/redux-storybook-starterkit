@@ -13,9 +13,9 @@ import { renderToString } from 'react-router-server'
 import { port, host, basename } from 'config'
 import configureStore from 'store/configure'
 import api from 'services/api'
-import App from 'components/App'
-import Html from 'components/Html'
-import Error from 'components/Error'
+import App from 'components/src/App'
+import Html from 'components/src/Html'
+import Error from 'components/src/Error'
 
 const renderApp = ({ store, context, location, sheet }) => {
   const app = sheet.collectStyles(

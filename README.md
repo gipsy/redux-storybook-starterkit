@@ -1,6 +1,6 @@
 ## To be added...
 
-### 3. Clone repo
+### 1. Clone repo
 
 ### 2. Install dependencies
 

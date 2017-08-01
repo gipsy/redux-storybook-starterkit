@@ -1,0 +1,8 @@
+import '@storybook/addon-actions'
+import '@storybook/addon-info'
+import 'storybook-addon-a11y/register'
+import '@storybook/addon-knobs/register'
+//import '@storybook/addon-comments/register'
+import '@storybook/addon-options/register'
+//import '@storybook/addon-chapters/register'
+import 'storybook-addon-specifications/register'

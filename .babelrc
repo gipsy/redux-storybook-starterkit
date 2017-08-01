@@ -14,7 +14,8 @@
       "plugins": [
         "transform-es2015-modules-commonjs",
         ["styled-components", {
-          "minify": false
+          "minify": false,
+          "ssr": true
         }]
       ]
     },

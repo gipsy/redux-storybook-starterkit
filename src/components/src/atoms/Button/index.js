@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 import Link from 'react-router-dom/Link'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
+import { darken } from 'polished'
 
 const fontSize = ({ height }) => `${height / 40}rem`
 
@@ -13,7 +14,7 @@ const backgroundColor = ({ transparent, disabled }) =>
 const foregroundColor = ({ transparent, disabled }) =>
   transparent ? palette(disabled ? 2 : 1) : palette('grayscale', 0, true)
 
-const hoverBackgroundColor = ({ disabled, transparent }) => !disabled && !transparent && palette(0)
+const hoverBackgroundColor = ({ disabled, transparent }) => !disabled && !transparent && palette(1)
 const hoverForegroundColor = ({ disabled, transparent }) => !disabled && transparent && palette(0)
 
 const styles = css`
@@ -24,6 +25,7 @@ const styles = css`
   font-size: ${fontSize};
   border: 0.0625em solid ${ifProp('transparent', 'currentcolor', 'transparent')};
   height: 2.5em;
+  width: 147px;
   justify-content: center;
   text-decoration: none;
   cursor: ${ifProp('disabled', 'default', 'pointer')};
@@ -62,7 +64,14 @@ const Button = ({ type, ...props }) => {
 }
 
 Button.propTypes = {
+  /**
+    Label for the button.
+  */
+  //label: PropTypes.string,
   disabled: PropTypes.bool,
+  /**
+    Triggered when clicked on the button.
+  */
   palette: PropTypes.string,
   transparent: PropTypes.bool,
   reverse: PropTypes.bool,

@@ -52,3 +52,4 @@ storiesOf('Tooltip', module)
       </Tooltip>
     </div>
   ))
+  .disable(enableFn => {false})

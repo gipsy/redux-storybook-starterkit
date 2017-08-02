@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { ConfirmModal } from 'components'
+import { ConfirmModal } from 'components/src'
 
 storiesOf('ConfirmModal', module)
   .add('default', () => (
@@ -35,3 +35,4 @@ storiesOf('ConfirmModal', module)
       Do you really want to remove it?
     </ConfirmModal>
   ))
+  .disable(enableFn => {false})

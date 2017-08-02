@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Slider } from 'components'
+import { Slider } from 'components/src'
 
 storiesOf('Slider', module)
   .add('default', () => (
@@ -15,3 +15,4 @@ storiesOf('Slider', module)
   .add('responsive with breakpoint', () => (
     <Slider responsive min={0} max={10} step={0.05} defaultValue={5} breakpoint={450} />
   ))
+  .disable(enableFn => {false})

@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Modal } from 'components'
+import { Modal } from 'components/src'
 
 storiesOf('Modal', module)
   .add('default', () => (
@@ -24,3 +24,4 @@ storiesOf('Modal', module)
       Ullamco et reprehenderit magna cillum ullamco consectetur et enim aliqua.
     </Modal>
   ))
+  .disable(enableFn => {false})

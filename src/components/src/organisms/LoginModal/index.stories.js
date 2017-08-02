@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { LoginModal } from 'components'
+import { LoginModal } from 'components/src'
 
 storiesOf('LoginModal', module)
   .add('default', () => (
@@ -12,3 +12,4 @@ storiesOf('LoginModal', module)
       isOpen
     />
   ))
+  .disable(enableFn => {false})

@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { PrimaryNavigation } from 'components'
+import { PrimaryNavigation } from 'components/src'
 
 storiesOf('PrimaryNavigation', module)
   .add('default', () => (
@@ -9,3 +9,4 @@ storiesOf('PrimaryNavigation', module)
   .add('reverse', () => (
     <PrimaryNavigation reverse />
   ))
+  .disable(enableFn => {false})

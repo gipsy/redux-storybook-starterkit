@@ -31,3 +31,4 @@ storiesOf('Input', module)
       <option>Option 3</option>
     </Input>
   ))
+  .disable(enableFn => {false})

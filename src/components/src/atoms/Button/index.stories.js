@@ -8,69 +8,50 @@ import { withKnobs, text, boolean, number } from '@storybook/addon-knobs'
 import Button from '.'
 
 storiesOf('Button', module)
-  .addDecorator(checkA11y)
-  .add('simple info',
-    withInfo({
-      text: 'doc string about my component',
-      maxPropsIntoLine: 1,
-      maxPropObjectKeys: 10,
-      maxPropArrayLength: 10,
-    })(() =>
-      <Button>That's it</Button>
-    )
+  .addWithChapters(
+    'Principles',
+    {
+      subtitle: 'Subtitle',
+      info: `
+        The front end team have worked to abstract the view layer out of Rails over to React enabling us to be much more component oriented in the code. At the same time, the design team have moved to Sketch and have started to build out a pattern library that will be updated and maintained directly alongside the living components.
+      `,
+      chapters: [
+        // List of chapters
+        {
+          title: 'Button Component',
+          subtitle: 'Based on standard React Button component',
+          info: `
+            Our Primary button colour is orange (#f6a623) aligning with progressive purchasing
+            action associated with the button. The Secondary button colour is grey-medium
+            associated with the explorative nature of the secondary CTA’s.
+          `,
+          sections: [
+            // List of sections.
+            {
+              title: 'This is Default Button',
+              subtitle: 'Each section can be used to render a component',
+              sectionFn: () => (<Button label="My Button" onClick={() => { alert('Hello World!'); }}/>),
+              options: {
+                showSource: true,
+                allowSourceToggling: true,
+                showPropTables: false,
+                allowPropTablesToggling: true,
+              },
+            },
+            {
+              title: 'This is Disabled Button',
+              subtitle: 'Based on standard React Button component',
+              sectionFn: () => (<Button label="My Disabled Button" disabled onClick={() => {}}/>),
+              options: {
+                showSource: true,
+                allowSourceToggling: true,
+                showPropTables: false,
+                allowPropTablesToggling: true,
+              },
+            },
+          ],
+        },
+
+      ],
+    }
   )
-  // .storyDecorator(withKnobs)
-  //   .chapter('Test')
-  //     .add('Test', () => {
-  //         setOptions({
-  //             name: 'React Theming',
-  //             url: 'https://github.com/sm-react/react-theming',
-  //         });
-  //         return (<Test />);
-  //     })
-  //     .endOfChapter()
-  //   .chapter('Components')
-  //     .addWithInfo('App-header', '<Header />', () => withNote(
-  //       `
-  //         Header Component
-  //         source: src/Header.jsx
-  //         story: src/stories
-  //         test: src/tests
-  //       `,
-  //       <Header
-  //         title={text('Title', 'Welcome to React-Theming')}
-  //         subtitle={text('Subtitle', 'Storybook Boilerplate Project')}
-  //       />,
-  //     ))
-  //     .addWithInfo('App-intro', '<Intro />', () => withNote(
-  //       `
-  //         Intro Component
-  //         source: src/Intro.jsx
-  //         story: src/stories
-  //         test: src/tests
-  //       `,
-  //       <Intro />,
-  //     ))
-  //     .endOfChapter()
-  //.chapter('Addons')
-  .add('default', () => (
-    <Button onClick={action('button-click')}>That&apos;s it</Button>
-  ))
-  .add('reverse', () => (
-    <Button reverse>Hello</Button>
-  ))
-  .add('another palette', () => (
-    <Button palette="secondary">Hello</Button>
-  ))
-  .add('disabled', () => (
-    <Button disabled>Hello</Button>
-  ))
-  .add('transparent', () => (
-    <Button transparent>Hello</Button>
-  ))
-  .add('height', () => (
-    <Button height={100}>Hello</Button>
-  ))
-  .add('link', () => (
-    <Button href="https://github.com/getdinghy/">GetDinghy repository</Button>
-  ))

@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Feature } from 'components'
+import { Feature } from 'components/src'
 
 storiesOf('Feature', module)
   .add('default', () => (
@@ -28,3 +28,4 @@ storiesOf('Feature', module)
       Ullamco duis in labore consectetur ad exercitation esse esse duis mollit sint.
     </Feature>
   ))
+  .disable(enableFn => {false})

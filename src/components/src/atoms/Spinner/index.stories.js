@@ -12,3 +12,4 @@ storiesOf('Spinner', module)
   .add('another palette', () => (
     <Spinner palette="secondary" />
   ))
+  .disable(enableFn => {false})

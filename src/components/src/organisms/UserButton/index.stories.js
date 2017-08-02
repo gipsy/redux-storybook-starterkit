@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { UserButton } from 'components'
+import { UserButton } from 'components/src'
 
 storiesOf('UserButton', module)
   .add('default', () => (
@@ -14,3 +14,4 @@ storiesOf('UserButton', module)
       onLogout={action('logout')}
     />
   ))
+  .disable(enableFn => {false})

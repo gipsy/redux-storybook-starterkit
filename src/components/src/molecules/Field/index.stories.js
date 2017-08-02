@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Field } from 'components'
+import { Field } from 'components/src'
 
 storiesOf('Field', module)
   .add('default', () => (
@@ -30,3 +30,4 @@ storiesOf('Field', module)
   .add('type radio invalid with error message', () => (
     <Field name="field" label="Label" type="radio" error="Invalid" invalid />
   ))
+  .disable(enableFn => {false})

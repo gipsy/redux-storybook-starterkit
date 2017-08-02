@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Blockquote } from 'components'
+import { Blockquote } from 'components/src'
 
 storiesOf('Blockquote', module)
   .add('default', () => (
@@ -18,3 +18,4 @@ storiesOf('Blockquote', module)
       Ullamco et reprehenderit magna cillum ullamco consectetur et enim aliqua.
     </Blockquote>
   ))
+  .disable(enableFn => {false})

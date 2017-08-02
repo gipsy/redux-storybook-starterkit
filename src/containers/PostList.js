@@ -7,7 +7,7 @@ import { fromEntities, fromResource } from 'store/selectors'
 import { resourceListReadRequest } from 'store/actions'
 import { isBrowser, isServer } from 'config'
 
-import { PostList } from 'components'
+import { PostList } from 'components/src'
 
 class PostListContainer extends Component {
   static propTypes = {

@@ -16,3 +16,4 @@ storiesOf('Icon', module)
   .add('height', () => (
     <Icon icon="close" height={100} />
   ))
+  .disable(enableFn => {false})

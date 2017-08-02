@@ -75,6 +75,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.1.9",
+    "@storybook/addon-centered": "^3.2.0",
     "@storybook/addon-chapters": "^0.6.2",
     "@storybook/addon-comments": "^3.1.9",
     "@storybook/addon-info": "^3.1.9",
@@ -114,6 +115,7 @@
     "lint-staged": "^4.0.2",
     "opn-cli": "^3.1.0",
     "raw-loader": "^0.5.1",
+    "react-storybook-addon-chapters": "^1.1.0",
     "react-test-renderer": "^15.5.4",
     "redux-mock-store": "^1.2.3",
     "remark-cli": "^4.0.0",

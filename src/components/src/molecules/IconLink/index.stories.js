@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { IconLink } from 'components'
+import { IconLink } from 'components/src'
 
 storiesOf('IconLink', module)
   .add('default', () => (
@@ -12,3 +12,4 @@ storiesOf('IconLink', module)
   .add('inside paragraph', () => (
     <p>Consequat cupidatat id <IconLink icon="close" href="#">excepteur</IconLink> ex nisi proident et sunt fugiat id pariatur.</p>
   ))
+  .disable(enableFn => {false})

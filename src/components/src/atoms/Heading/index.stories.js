@@ -20,3 +20,4 @@ storiesOf('Heading', module)
   .add('level 3', () => (
     <Heading level={3}>Id tempor duis non esse commodo fugiat excepteur nostrud.</Heading>
   ))
+  .disable(enableFn => {false})

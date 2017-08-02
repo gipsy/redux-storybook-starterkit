@@ -12,3 +12,4 @@ storiesOf('HorizontalRule', module)
   .add('palette reverse', () => (
     <HorizontalRule palette="primary" reverse />
   ))
+  .disable(enableFn => {false})

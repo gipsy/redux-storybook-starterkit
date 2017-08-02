@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Table } from 'components'
+import { Table } from 'components/src'
 
 storiesOf('Table', module)
   .add('default', () => (
@@ -75,3 +75,4 @@ storiesOf('Table', module)
       </tr>
     </Table>
   ))
+  .disable(enableFn => {false})

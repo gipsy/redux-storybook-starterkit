@@ -21,3 +21,4 @@ storiesOf('TableCell', module)
       </tbody>
     </table>
   ))
+  .disable(enableFn => {false})

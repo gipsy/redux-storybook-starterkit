@@ -12,3 +12,4 @@ storiesOf('Link', module)
   .add('another palette', () => (
     <Link href="https://github.com/diegohaz/arc" palette="secondary">ARc repository</Link>
   ))
+  .disable(enableFn => {false})

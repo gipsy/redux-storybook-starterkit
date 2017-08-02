@@ -31,3 +31,4 @@ storiesOf('List', module)
       <li>Item 3</li>
     </List>
   ))
+  .disable(enableFn => {false})

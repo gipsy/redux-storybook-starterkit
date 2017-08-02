@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { PageTemplate, Header, Footer, Heading } from 'components'
+import { PageTemplate, Header, Footer, Heading } from 'components/src'
 
 const NotFoundPage = ({ staticContext }) => {
   if (staticContext) {

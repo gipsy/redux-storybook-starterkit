@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { IconButton } from 'components'
+import { IconButton } from 'components/src'
 
 storiesOf('IconButton', module)
   .add('default', () => (
@@ -27,3 +27,4 @@ storiesOf('IconButton', module)
   .add('height', () => (
     <IconButton icon="close" height={100}>Hello</IconButton>
   ))
+  .disable(enableFn => {false})

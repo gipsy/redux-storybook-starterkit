@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Organism } from 'components'
+import { Organism } from 'components/src'
 
 storiesOf('Organism', module)
   .add('default', () => (
@@ -9,3 +9,4 @@ storiesOf('Organism', module)
   .add('reverse', () => (
     <Organism reverse />
   ))
+  .disable(enableFn => {false})

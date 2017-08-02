@@ -1,7 +1,7 @@
 // https://github.com/diegohaz/arc/wiki/Atomic-Design
 import React from 'react'
 
-import { PageTemplate, Header, Hero, Footer, FeatureList } from 'components'
+import { PageTemplate, Header, Hero, Footer, FeatureList } from 'components/src'
 
 const HomePage = () => {
   return (

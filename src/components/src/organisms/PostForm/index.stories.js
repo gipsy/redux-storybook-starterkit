@@ -6,3 +6,4 @@ storiesOf('PostForm', module)
   .add('default', () => (
     <PostForm />
   ))
+  .disable(enableFn => {false})

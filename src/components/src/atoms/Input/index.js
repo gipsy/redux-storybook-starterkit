@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
+import { placeholder } from 'polished'
 
 const fontSize = ({ height }) => `${height / 35.5555555556}rem`
 
@@ -12,13 +13,15 @@ const styles = css`
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  font-size: ${fontSize};
+  font-size: 0.875rem;
   padding: ${ifProp({ type: 'textarea' }, '0.4444444444em', '0 0.4444444444em')};
-  height: ${ifProp({ type: 'textarea' }, 'auto', '2.2222222222em')};
+  height: ${ifProp({ type: 'textarea' }, 'auto', '3.125rem')};
   color: ${palette('grayscale', 0)};
   background-color: ${palette('grayscale', 0, true)};
-  border: 1px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
-  border-radius: 2px;
+  border: 2px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
+  border-radius: 1px;
+  -webkit-appearance: none;
+  ${placeholder({'color': palette('grayscale', 3, true)})}
 
   &[type=checkbox], &[type=radio] {
     display: inline-block;
@@ -52,7 +55,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   type: 'text',
-  height: 40,
+  height: 50,
 }
 
 export default Input

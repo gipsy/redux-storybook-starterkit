@@ -27,3 +27,4 @@ storiesOf('Block', module)
       Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.
     </Block>
   ))
+  .disable(enableFn => {false})

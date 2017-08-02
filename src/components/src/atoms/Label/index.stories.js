@@ -9,3 +9,4 @@ storiesOf('Label', module)
   .add('reverse', () => (
     <Label reverse>Hello</Label>
   ))
+  .disable(enableFn => {false})

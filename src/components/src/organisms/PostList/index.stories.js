@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { PostList } from 'components'
+import { PostList } from 'components/src'
 
 const list = [
   { id: 0, title: 'Post 1', body: 'Voluptate ullamco anim exercitation deserunt cillum ullamco.' },
@@ -16,3 +16,4 @@ storiesOf('PostList', module)
   .add('loading', () => (
     <PostList list={[]} loading />
   ))
+  .disable(enableFn => {false})

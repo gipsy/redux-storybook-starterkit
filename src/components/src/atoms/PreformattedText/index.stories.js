@@ -15,3 +15,4 @@ storiesOf('PreformattedText', module)
   .add('block reverse', () => (
     <PreformattedText block reverse>git clone https://github.com/diegohaz/arc</PreformattedText>
   ))
+  .disable(enableFn => {false})

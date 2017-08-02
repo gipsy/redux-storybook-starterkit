@@ -12,3 +12,4 @@ storiesOf('Badge', module)
   .add('another palette', () => (
     <Badge palette="secondary">Hello</Badge>
   ))
+  .disable(enableFn => {false})

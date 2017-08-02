@@ -9,7 +9,7 @@ import { darken } from 'polished'
 const fontSize = ({ height }) => `${height / 40}rem`
 
 const backgroundColor = ({ transparent, disabled }) =>
-  transparent ? 'transparent' : palette(disabled ? 2 : 1)
+  transparent ? 'transparent' : (disabled ? palette('grayscale', 3, true) : palette(0))
 
 const foregroundColor = ({ transparent, disabled }) =>
   transparent ? palette(disabled ? 2 : 1) : palette('grayscale', 0, true)
@@ -22,7 +22,7 @@ const styles = css`
   font-family: ${font('primary')};
   align-items: center;
   white-space: nowrap;
-  font-size: ${fontSize};
+  font-size: 14px;
   border: 0.0625em solid ${ifProp('transparent', 'currentcolor', 'transparent')};
   height: 2.5em;
   width: 147px;
@@ -43,35 +43,39 @@ const styles = css`
     color: ${hoverForegroundColor};
   }
 
+  &:active {
+    background-color: ${backgroundColor}
+  }
+
   &:focus {
     outline: none
   }
 `
 
-const StyledLink = styled(({ disabled, transparent, reverse, palette, height, theme, ...props }) =>
+const StyledLink = styled(({disabled, transparent, reverse, palette, height, theme, ...props }) =>
   <Link {...props} />
 )`${styles}`
 const Anchor = styled.a`${styles}`
 const StyledButton = styled.button`${styles}`
 
-const Button = ({ type, ...props }) => {
+const Button = ({ type, label, ...props }) => {
   if (props.to) {
-    return <StyledLink {...props} />
+    return <StyledLink {...props}>{label}</StyledLink>
   } else if (props.href) {
-    return <Anchor {...props} />
+    return <Anchor {...props}>{label}</Anchor>
   }
-  return <StyledButton {...props} type={type} />
+  return <StyledButton {...props} type={type}>{label}</StyledButton>
 }
 
 Button.propTypes = {
   /**
     Label for the button.
   */
-  //label: PropTypes.string,
-  disabled: PropTypes.bool,
+  label: PropTypes.string.isRequired,
   /**
-    Triggered when clicked on the button.
+    State for the button.
   */
+  disabled: PropTypes.bool,
   palette: PropTypes.string,
   transparent: PropTypes.bool,
   reverse: PropTypes.bool,
@@ -82,9 +86,10 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
+  label: 'Button label',
   palette: 'primary',
   type: 'button',
-  height: 40,
+  height: 50,
 }
 
 export default Button

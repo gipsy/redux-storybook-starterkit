@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { size } from 'styled-theme'
 
-import { IconLink, PrimaryNavigation, Block } from 'components'
+import { IconLink, PrimaryNavigation, Block } from 'components/src'
 import { UserButton } from 'containers'
 
 const Wrapper = styled(Block)`

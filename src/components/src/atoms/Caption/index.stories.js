@@ -9,3 +9,4 @@ storiesOf('Caption', module)
   .add('reverse', () => (
     <Caption reverse>Hello</Caption>
   ))
+  .disable(enableFn => {false})

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Feature, Link, Heading, Paragraph } from 'components'
+import { Feature, Link, Heading, Paragraph } from 'components/src'
 
 const Grid = styled.div`
   display: flex;

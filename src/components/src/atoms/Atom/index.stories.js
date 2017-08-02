@@ -9,3 +9,4 @@ storiesOf('Atom', module)
   .add('reverse', () => (
     <Atom reverse>Hello</Atom>
   ))
+  .disable(enableFn => {false})

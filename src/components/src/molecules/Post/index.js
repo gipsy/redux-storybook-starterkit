@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Heading, Paragraph } from 'components/src'
+import { Heading, Paragraph } from '../..'
 
 const Article = styled.article``
 

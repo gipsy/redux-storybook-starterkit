@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Icon, Link } from 'components/src'
+import { Icon, Link } from '../..'
 
 const fontSize = ({ height }) => height ? `${height / 3 / 16}rem` : '0.75em'
 

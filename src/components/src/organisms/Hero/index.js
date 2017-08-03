@@ -11,7 +11,7 @@ import {
   PreformattedText,
   Heading,
   Tooltip,
-} from 'components/src'
+} from '../..'
 
 const Wrapper = styled(Block)`
   display: flex;

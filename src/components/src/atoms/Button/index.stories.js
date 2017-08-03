@@ -2,14 +2,14 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { checkA11y } from 'storybook-addon-a11y'
 import { addDecorator } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
 import { action, decorateAction } from '@storybook/addon-actions'
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs'
 import Button from '.'
+import { ShowStaticMarkup } from 'react-storybook-addon-static-markup'
 
-storiesOf('Button', module)
+storiesOf('Components', module)
   .addWithChapters(
-    'Principles',
+    'Buttons',
     {
       subtitle: 'Subtitle',
       info: `
@@ -49,9 +49,25 @@ storiesOf('Button', module)
                 allowPropTablesToggling: true,
               },
             },
+            {
+              title: 'This is Static Buttons appearance',
+              subtitle: 'Some additional information',
+              sectionFn: () => (
+                <ShowStaticMarkup>
+                  <button className="foo bar baz">
+                    hello!
+                  </button>
+                </ShowStaticMarkup>
+              ),
+              options: {
+                showSource: false,
+                allowSourceToggling: false,
+                showPropTables: false,
+                allowPropTablesToggling: false,
+              }
+            },
           ],
         },
-
       ],
-    }
+    },
   )

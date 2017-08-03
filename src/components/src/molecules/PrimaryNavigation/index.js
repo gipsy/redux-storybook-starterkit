@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { palette } from 'styled-theme'
 
-import { Link } from 'components/src'
+import { Link } from '../..'
 
 const Nav = styled.nav`
   display: flex;

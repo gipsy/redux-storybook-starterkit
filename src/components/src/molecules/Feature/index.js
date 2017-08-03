@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { ifProp } from 'styled-tools'
 
-import { Icon, Link, Paragraph, Heading, Badge, PreformattedText } from 'components/src'
+import { Icon, Link, Paragraph, Heading, Badge, PreformattedText } from '../..'
 
 const Wrapper = styled.div`
   position: relative;

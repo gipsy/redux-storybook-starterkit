@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { font, palette } from 'styled-theme'
 
-import { Caption } from 'components/src'
+import { Caption } from '../..'
 
 const StyledTable = styled.table`
   font-family: ${font('primary')};

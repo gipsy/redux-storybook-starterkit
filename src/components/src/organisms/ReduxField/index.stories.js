@@ -2,9 +2,9 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { ReduxField } from 'components/src'
 
-storiesOf('ReduxField', module)
+storiesOf('Components', module)
   .addWithChapters(
-    'Principles',
+    'ReactField',
     {
       subtitle: 'Subtitle',
       info: `

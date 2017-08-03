@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { PageTemplate, Header, Footer } from 'components/src'
+import { PageTemplate, Header, Footer } from '../..'
 import { PostForm, PostList } from 'containers'
 
 const SamplePage = () => {

@@ -1,6 +1,6 @@
 {
   "name": "@getdinghy/npm-design-framework",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Core Storybook Components",
   "license": "MIT",
   "main": "dist/index.js",

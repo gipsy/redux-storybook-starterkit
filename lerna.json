@@ -16,6 +16,5 @@
   "packages": [
     "src"
   ],
-  "concurrency": 1,
-  "version": "0.0.7"
+  "concurrency": 1
 }

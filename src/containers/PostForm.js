@@ -3,7 +3,7 @@ import { reduxForm } from 'redux-form'
 import { resourceCreateRequest } from 'store/actions'
 import { createValidator, required } from 'services/validation'
 
-import { PostForm } from 'components/src'
+import { PostForm } from 'components'
 
 const PostFormContainer = props => <PostForm {...props} />
 

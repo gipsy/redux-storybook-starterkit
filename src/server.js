@@ -4,7 +4,7 @@ import path from 'path'
 import express from 'express'
 import React from 'react'
 import serialize from 'serialize-javascript'
-import { ServerStyleSheet } from 'styled-components'
+import { ServerStyleSheet,  } from 'styled-components'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { Provider } from 'react-redux'
 import { StaticRouter } from 'react-router'
@@ -13,9 +13,9 @@ import { renderToString } from 'react-router-server'
 import { port, host, basename } from 'config'
 import configureStore from 'store/configure'
 import api from 'services/api'
-import App from 'components/src/App'
-import Html from 'components/src/Html'
-import Error from 'components/src/Error'
+import App from 'components/App'
+import Html from 'components/Html'
+import Error from 'components/Error'
 
 const renderApp = ({ store, context, location, sheet }) => {
   const app = sheet.collectStyles(
@@ -48,6 +48,8 @@ app.use((req, res, next) => {
   const store = configureStore({}, { api: api.create() })
   const context = {}
   const sheet = new ServerStyleSheet()
+  //const main = sheet.collectStyles(<Main />)
+  //const styleTags = sheet.getStyleElement()
 
   renderApp({ store, context, location, sheet })
     .then(({ state: serverState, html: content }) => {

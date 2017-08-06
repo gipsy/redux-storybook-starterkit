@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { fromModal } from 'store/selectors'
 import { modalHide } from 'store/actions'
 
-import { Modal } from 'components/src'
+import { Modal } from 'components'
 
 const ModalContainer = props => <Modal {...props} />
 

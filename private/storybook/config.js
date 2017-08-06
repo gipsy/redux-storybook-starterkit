@@ -12,13 +12,13 @@ import staticMarkup from 'react-storybook-addon-static-markup'
 import { ThemeProvider } from 'styled-components'
 import configureStore from 'store/configure'
 import api from 'services/api'
-import theme from 'components/src/themes/default'
+import theme from 'components/themes/default'
 
 setAddon(chaptersAddon)
 setAddon(staticMarkup)
 
 const store = configureStore({}, { api: api.create() })
-const req = require.context('components/src', true, /.stories.js$/)
+const req = require.context('../../src/components', true, /.stories.js$/)
 
 function loadStories() {
   req.keys().forEach(filename => req(filename))
@@ -31,7 +31,7 @@ setOptions({
   showLeftPanel: true,
   showDownPanel: true,
   showSearchBox: false,
-  downPanelInRight: true,
+  downPanelInRight: false,
   sortStoriesByKind: false,
   hierachySeparator: '\\.',
 });

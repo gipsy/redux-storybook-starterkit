@@ -1,5 +1,5 @@
 {
-  "name": "@getdinghy/app",
+  "name": "@getdinghy/design-system",
   "version": "0.0.1",
   "private": true,
   "main": "dist/server",
@@ -74,6 +74,8 @@
     }
   },
   "devDependencies": {
+    "@buildit/storybook-addon-blabbr": "^1.1.0",
+    "@buildit/storybook-addon-versions": "^0.4.3",
     "@storybook/addon-actions": "^3.1.9",
     "@storybook/addon-centered": "^3.2.0",
     "@storybook/addon-chapters": "^0.6.2",
@@ -145,11 +147,14 @@
   "dependencies": {
     "babel-polyfill": "^6.20.0",
     "express": "^4.15.2",
+    "grid-styled": "^2.0.0-10",
     "history": "^4.6.1",
     "isomorphic-fetch": "^2.2.1",
+    "lean-redux": "^3.3.1",
     "lodash": "^4.17.4",
     "normalizr": "^3.0.1",
     "polished": "^1.3.0",
+    "prism-observable": "^2.0.2",
     "prop-types": "^15.5.8",
     "query-string": "^4.3.2",
     "ramda": "^0.24.1",
@@ -171,6 +176,8 @@
     "simple-load-script": "^1.0.2",
     "storybook-addon-scissors": "^3.0.1",
     "styled-components": "^2.0.0",
+    "styled-components-breakpoint": "^1.0.1",
+    "styled-components-spacing": "^2.1.3",
     "styled-theme": "^0.3.0",
     "styled-tools": "^0.1.2",
     "validator": "^8.0.0"

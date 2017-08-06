@@ -1,8 +1,11 @@
 // https://github.com/diegohaz/arc/wiki/Reducers
 import camelCase from 'lodash/camelCase'
 import { combineReducers } from 'redux'
+import {leanReducer} from 'lean-redux'
 import { reducer as form } from 'redux-form'
 import { reducer as thunk } from 'redux-saga-thunk'
+
+leanReducer.setGlobalScope('lean')
 
 const reducers = {
   form,

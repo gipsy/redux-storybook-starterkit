@@ -13,6 +13,7 @@
     "development": {
       "plugins": [
         "transform-es2015-modules-commonjs",
+        "babel-plugin-add-module-exports",
         ["styled-components", {
           "preprocess": true,
           "minify": false,
@@ -28,6 +29,7 @@
     "production": {
       "plugins": [
         "transform-react-remove-prop-types",
+        "babel-plugin-add-module-exports",
         ["styled-components", {
           "displayName": false
         }]

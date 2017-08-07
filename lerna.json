@@ -14,8 +14,7 @@
     }
   },
   "packages": [
-    "src/components"
+    "app/src"
   ],
-  "concurrency": 1,
-  "version": "0.0.6"
+  "concurrency": 1
 }

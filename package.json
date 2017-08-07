@@ -26,11 +26,12 @@
     "build": "npm run env:prod -- webpack",
     "bootstrap": "lerna bootstrap --concurrency 1 --npm-client=\"yarn\" --hoist && node private/scripts/hoist_internals.js",
     "build-packs": "lerna exec --scope '@getdinghy/*' --parallel -- private/scripts/build_packs.sh packs",
-    "publish_components": "lerna publish"
+    "prepublish": "node private/scripts/prepublish_components.js",
+    "publish-components": "lerna publish"
   },
   "jest": {
     "moduleDirectories": [
-      "src",
+      "src/src/components",
       "node_modules"
     ],
     "moduleNameMapper": {
@@ -93,10 +94,12 @@
     "babel-eslint": "^7.2.2",
     "babel-jest": "^20.0.0",
     "babel-loader": "^7.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-docgen": "^1.6.0",
     "babel-plugin-styled-components": "^1.1.7",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.3.3",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
@@ -105,6 +108,7 @@
     "danger": "^1.1.0",
     "delay": "^2.0.0",
     "enzyme": "^2.7.0",
+    "es6-module-transpiler-npm-resolver": "^0.3.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-import-resolver-webpack": "^0.8.1",
@@ -146,7 +150,9 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.20.0",
+    "babel-runtime": "^6.25.0",
     "express": "^4.15.2",
+    "graceful-fs": "^4.1.11",
     "grid-styled": "^2.0.0-10",
     "history": "^4.6.1",
     "isomorphic-fetch": "^2.2.1",

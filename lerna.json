@@ -14,7 +14,7 @@
     }
   },
   "packages": [
-    "src"
+    "app/src"
   ],
   "concurrency": 1
 }

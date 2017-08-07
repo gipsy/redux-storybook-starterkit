@@ -1,4 +1,8 @@
 // https://github.com/diegohaz/arc/wiki/Webpack
+const fs = require('fs')
+const gracefulFs = require('graceful-fs')
+gracefulFs.gracefulify(fs)
+
 const path = require('path')
 const devServer = require('@webpack-blocks/dev-server2')
 const splitVendor = require('webpack-blocks-split-vendor')
@@ -16,7 +20,7 @@ const {
 
 const host = process.env.HOST || 'localhost'
 const port = (+process.env.PORT + 1) || 3001
-const sourceDir = process.env.SOURCE || 'src'
+const sourceDir = process.env.SOURCE || 'app/src'
 const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/')
 const sourcePath = path.join(process.cwd(), sourceDir)
 const outputPath = path.join(process.cwd(), 'dist/public')
@@ -28,7 +32,7 @@ const devDomain = `http://${host}:${port}/`
 const babel = () => () => ({
   module: {
     rules: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { test: /\.js?$/, exclude: /node_modules/, loader: 'babel-loader' },
     ],
   },
 })

@@ -18,7 +18,7 @@ setAddon(chaptersAddon)
 setAddon(staticMarkup)
 
 const store = configureStore({}, { api: api.create() })
-const req = require.context('../../src/components', true, /.stories.js$/)
+const req = require.context('../../app/src/components', true, /.stories.js$/)
 
 function loadStories() {
   req.keys().forEach(filename => req(filename))

@@ -905,6 +905,12 @@ babel-plugin-react-docgen@^1.6.0:
     lodash "4.x.x"
     react-docgen "^2.15.0"
 
+babel-plugin-root-import@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-root-import/-/babel-plugin-root-import-5.1.0.tgz#80ea1cd5945b463a5e3f7e204a69478c573e328c"
+  dependencies:
+    slash "^1.0.0"
+
 babel-plugin-styled-components@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.1.7.tgz#a92c239779cc80e7838b645c12865c61c4ca71ce"
@@ -5691,14 +5697,7 @@ markdown-table@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.1.tgz#4b3dd3a133d1518b8ef0dbc709bf2a1b4824bc8c"
 
-markdown-to-react-components@^0.2.1:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/markdown-to-react-components/-/markdown-to-react-components-0.2.4.tgz#e2854edc4ff0fe9e360282e8b1c3e5637d57c3db"
-  dependencies:
-    he "^1.1.0"
-    marked "^0.3.3"
-
-markdown-to-react-components@kadirahq/markdown-to-react-components:
+markdown-to-react-components@^0.2.1, markdown-to-react-components@kadirahq/markdown-to-react-components:
   version "0.2.1"
   resolved "https://codeload.github.com/kadirahq/markdown-to-react-components/tar.gz/3ff48930488918dd73704a854b1dfa36e841e97d"
   dependencies:

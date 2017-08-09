@@ -1,6 +1,6 @@
 // https://github.com/diegohaz/arc/wiki/Selectors#unit-testing-selectors
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#modal
-import * as selectors from './selectors'
+import * as selectors from 'store/modal/selectors'
 
 test('initialState', () => {
   expect(selectors.initialState).toEqual({})

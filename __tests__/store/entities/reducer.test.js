@@ -1,8 +1,8 @@
 // https://github.com/diegohaz/arc/wiki/Reducers#unit-testing-reducers
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#entities
-import { initialState } from '~/src/store/entities/selectors'
-import { ENTITIES_RECEIVE } from '~/src/store/entities/actions'
-import reducer from '~/src/store/entities/reducer'
+import { initialState } from 'store/entities/selectors'
+import { ENTITIES_RECEIVE } from 'store/entities/actions'
+import reducer from 'store/entities/reducer'
 
 const altState = {
   ...initialState,

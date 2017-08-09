@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import ReduxField from '~/src/components/organisms/ReduxField'
+import ReduxField from 'components/organisms/ReduxField'
 
 let meta
 let input

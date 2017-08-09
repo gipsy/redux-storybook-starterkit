@@ -1,4 +1,4 @@
-import * as v from '~/src/services/validation'
+import * as v from 'services/validation'
 
 test('email', () => {
   expect(v.email('invalid')).toBeTruthy()

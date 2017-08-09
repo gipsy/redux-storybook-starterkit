@@ -1,7 +1,7 @@
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#entities
 import configureStore from 'redux-mock-store'
-import entitiesMiddleware from '~/src/store/entities/middleware'
-import { entitiesReceive } from '~/src/store/entities/actions'
+import entitiesMiddleware from 'store/entities/middleware'
+import { entitiesReceive } from 'store/entities/actions'
 
 jest.mock('./schemas', () => {
   const { schema } = require('normalizr')

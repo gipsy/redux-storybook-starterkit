@@ -2,8 +2,8 @@
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#social
 import loadScript from 'simple-load-script'
 import { put, call, fork } from 'redux-saga/effects'
-import * as actions from './actions'
-import saga, * as sagas from './sagas'
+import * as actions from 'store/social/actions'
+import saga, * as sagas from 'store/social/sagas'
 
 const profile = { getName: () => 'name', getImageUrl: () => 'imageUrl' }
 const user = { getBasicProfile: () => profile }

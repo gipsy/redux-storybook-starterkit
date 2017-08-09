@@ -3,8 +3,8 @@
 import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import delay from 'delay'
-import reducer from './reducer'
-import sagas from './sagas'
+import reducer from 'store/resources/reducer'
+import sagas from 'store/resources/sagas'
 import {
   resourceCreateRequest,
   resourceListReadRequest,

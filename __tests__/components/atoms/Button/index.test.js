@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Button from '~/src/components/atoms/Button'
+import Button from 'components/atoms/Button'
 
 const wrap = (props = {}) => shallow(<Button {...props} />).dive()
 

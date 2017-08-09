@@ -1,6 +1,6 @@
 // https://github.com/diegohaz/arc/wiki/Actions#unit-testing-actions
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#entities
-import * as actions from '~/src/store/estities/actions'
+import * as actions from 'store/estities/actions'
 
 test('entitiesReceive', () => {
   expect(actions.entitiesReceive('test')).toEqual({

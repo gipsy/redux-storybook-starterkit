@@ -1,6 +1,6 @@
 // https://github.com/diegohaz/arc/wiki/Selectors#unit-testing-selectors
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#social
-import * as selectors from '~/src/social/selectors'
+import * as selectors from 'social/selectors'
 
 test('initialState', () => {
   expect(selectors.initialState).toEqual({

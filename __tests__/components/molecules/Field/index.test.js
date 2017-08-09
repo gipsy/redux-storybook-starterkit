@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Field from '~/src/components/molecules/Field'
+import Field from 'components/molecules/Field'
 
 const wrap = (props = {}) => shallow(<Field name="name" {...props} />)
 

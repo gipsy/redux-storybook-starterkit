@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Footer from '~/src/components/organizms/Footer'
+import Footer from 'components/organizms/Footer'
 
 const wrap = (props = {}) => shallow(<Footer {...props} />).dive()
 

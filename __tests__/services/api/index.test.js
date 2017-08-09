@@ -1,4 +1,4 @@
-import api, { checkStatus, parseJSON, parseSettings, parseEndpoint } from '~/src/services/api'
+import api, { checkStatus, parseJSON, parseSettings, parseEndpoint } from 'services/api'
 
 jest.mock('config', () => ({
   apiUrl: 'https://api.foo.com',

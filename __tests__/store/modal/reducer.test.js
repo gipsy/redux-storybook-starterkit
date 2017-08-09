@@ -1,8 +1,8 @@
 // https://github.com/diegohaz/arc/wiki/Reducers#unit-testing-reducers
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#modal
-import { initialState } from './selectors'
-import * as actions from './actions'
-import reducer from './reducer'
+import { initialState } from 'store/modal/selectors'
+import * as actions from 'store/modal/actions'
+import reducer from 'store/modal/reducer'
 
 const altState = {
   ...initialState,

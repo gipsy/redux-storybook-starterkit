@@ -2,7 +2,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import renderer from 'react-test-renderer'
-import HomePage from 'components'
+import HomePage from '~/src/components/pages/HomePage'
 
 it('renders a snapshot', () => {
   const tree = renderer.create(<HomePage/>).toJSON()

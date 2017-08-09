@@ -1,5 +1,8 @@
 __storybook__
 __tests__
+.DS_Store
+.cache
+*.log
 coverage
 node_modules
 src

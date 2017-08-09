@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import IconLink from '.'
+import IconLink from '~/src/components/molecules/IconLink'
 
 const wrap = (props = {}) => shallow(<IconLink icon="github" {...props} />)
 

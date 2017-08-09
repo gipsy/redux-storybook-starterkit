@@ -2,7 +2,7 @@
   "name": "@getdinghy/design-system",
   "version": "0.0.1",
   "private": true,
-  "main": "dist/components/index",
+  "main": "dist/server",
   "scripts": {
     "start": "node .",
     "env:dev": "cross-env NODE_ENV=development",

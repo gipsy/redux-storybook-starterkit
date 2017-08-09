@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { size } from 'styled-theme'
 
 import IconLink from '~/src/components/molecules/IconLink'
-import PrimaryNavigation from '~/src/components/molecules/PrimaryNavigation'
 import Block from '~/src/components/atoms/Block'
 
 const Wrapper = styled(Block)`
@@ -25,16 +24,11 @@ const InnerWrapper = styled.div`
   }
 `
 
-const StyledPrimaryNavigation = styled(PrimaryNavigation)`
-  flex: 1
-`
-
 const Header = (props) => {
   return (
     <Wrapper opaque reverse {...props}>
       <InnerWrapper>
         <IconLink to="/" icon="arc" height={100} />
-        <StyledPrimaryNavigation reverse />
       </InnerWrapper>
     </Wrapper>
   )

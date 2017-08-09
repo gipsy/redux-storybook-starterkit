@@ -4,8 +4,6 @@ import { injectGlobal, ThemeProvider } from 'styled-components'
 import Helmet from 'react-helmet'
 
 import HomePage from '~/src/components/pages/HomePage'
-import SamplePage from '~/src/components/pages/SamplePage'
-import NotFoundPage from '~/src/components/pages/NotFoundPage'
 import GoogleTagManager from '~/src/containers/GoogleTagManager'
 
 // https://github.com/diegohaz/arc/wiki/Styling
@@ -36,8 +34,6 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <Switch>
           <Route path="/" component={HomePage} exact />
-          <Route path="/sample-page" component={SamplePage} />
-          <Route component={NotFoundPage} />
         </Switch>
       </ThemeProvider>
     </div>

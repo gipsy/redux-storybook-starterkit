@@ -1,8 +1,8 @@
 // https://github.com/diegohaz/arc/wiki/Reducers#unit-testing-reducers
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#resource
-import { initialState, getResourceState } from 'store/resources/selectors'
-import * as actions from 'store/resources/actions'
-import reducer from 'store/resources/reducer'
+import { initialState, getResourceState } from 'store/resource/selectors'
+import * as actions from 'store/resource/actions'
+import reducer from 'store/resource/reducer'
 
 const action = (type, payload, meta) => ({
   type,

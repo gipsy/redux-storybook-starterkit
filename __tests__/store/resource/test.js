@@ -3,16 +3,16 @@
 import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import delay from 'delay'
-import reducer from 'store/resources/reducer'
-import sagas from 'store/resources/sagas'
+import reducer from '~/src/store/resource/reducer'
+import sagas from '~/src/store/resource/sagas'
 import {
   resourceCreateRequest,
   resourceListReadRequest,
   resourceDetailReadRequest,
   resourceUpdateRequest,
   resourceDeleteRequest,
-} from './actions'
-import { getList, getDetail } from './selectors'
+} from '~/src/store/resource/actions'
+import { getList, getDetail } from '~/src/store/resource/selectors'
 
 const sagaMiddleware = createSagaMiddleware()
 

@@ -1,6 +1,6 @@
 // https://github.com/diegohaz/arc/wiki/Actions#unit-testing-actions
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#resource
-import * as actions from 'store/resources/actions'
+import * as actions from 'store/resource/actions'
 
 test('resourceCreateRequest', () => {
   expect(actions.resourceCreateRequest('resources', { title: 'test' }))

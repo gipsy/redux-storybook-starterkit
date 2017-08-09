@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import PageTemplate from 'components/templates/PageTemplate'
+import PageTemplate from '~/src/components/templates/PageTemplate'
 
 const wrap = (props = {}) => shallow(
   <PageTemplate header="header" footer="footer" {...props}>test</PageTemplate>

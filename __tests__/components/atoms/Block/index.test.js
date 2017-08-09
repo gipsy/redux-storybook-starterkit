@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Block from 'components/atoms/Block'
+import Block from '~/src/components/atoms/Block'
 
 const wrap = (props = {}) => shallow(<Block {...props} />)
 

@@ -2,8 +2,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { gtmStart } from 'store/actions'
-import { gtmId } from 'config'
+import { gtmStart } from '~/src/store/actions'
+import { gtmId } from '~/src/config'
 
 class GoogleTagManager extends Component {
   static propTypes = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Header from 'components/organisms/Header'
+import Header from '~/src/components/organisms/Header'
 
 const wrap = (props = {}) => shallow(<Header {...props} />).dive()
 

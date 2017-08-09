@@ -1,8 +1,8 @@
 // https://github.com/diegohaz/arc/wiki/Sagas#unit-testing-sagas
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#resource
 import { take, put, call, fork } from 'redux-saga/effects'
-import * as actions from 'store/resources/actions'
-import saga, * as sagas from 'store/sesources/sagas'
+import * as actions from 'store/resource/actions'
+import saga, * as sagas from 'store/resource/sagas'
 
 const api = {
   post: () => {},

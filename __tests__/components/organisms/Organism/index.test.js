@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Organism from 'components/organisms/Organism'
+import Organism from '~/src/components/organisms/Organism'
 
 const wrap = (props = {}) => shallow(<Organism {...props} />)
 

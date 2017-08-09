@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Molecule from 'components/molecules/Molecule'
+import Molecule from '~/src/components/molecules/Molecule'
 
 const wrap = (props = {}) => shallow(<Molecule {...props} />)
 

@@ -1,6 +1,6 @@
 // https://github.com/diegohaz/arc/wiki/Actions#unit-testing-actions
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#social
-import * as actions from './actions'
+import * as actions from '~/src/social/actions'
 
 test('socialLoginPrepare', () => {
   expect(actions.socialLoginPrepare('facebook')).toEqual({

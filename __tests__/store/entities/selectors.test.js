@@ -1,7 +1,7 @@
 // https://github.com/diegohaz/arc/wiki/Selectors#unit-testing-selectors
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#entities
 import values from 'lodash/values'
-import * as selectors from './selectors'
+import * as selectors from '~/src/store/entities/selectors'
 
 jest.mock('./schemas', () => {
   const { schema } = require('normalizr')

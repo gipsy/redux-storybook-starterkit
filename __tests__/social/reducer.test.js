@@ -1,8 +1,8 @@
 // https://github.com/diegohaz/arc/wiki/Reducers#unit-testing-reducers
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#social
-import { initialState } from './selectors'
-import * as actions from './actions'
-import reducer from './reducer'
+import { initialState } from '~/src/social/selectors'
+import * as actions from '~/src/social/actions'
+import reducer from '~/src/social/reducer'
 
 const altState = {
   ...initialState,

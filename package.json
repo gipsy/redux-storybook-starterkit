@@ -15,8 +15,8 @@
     "lint:js": "eslint src,private webpack.config.js --cache --cache-location=.cache/eslint --ext .js,.jsx,.json",
     "lint:md": "remark .",
     "precommit": "lint-staged",
-    "storybook": "start-storybook -p 9001 -c private/storybook",
-    "build-storybook": "build-storybook -c private/storybook",
+    "storybook": "start-storybook -p 9001 -c __storybook__",
+    "build-storybook": "build-storybook -c __storybook__",
     "deploy-storybook": "bash private/scripts/publish_storybook.sh",
     "predev": "npm run prebuild",
     "dev": "npm run env:dev -- webpack-dev-server",
@@ -31,14 +31,14 @@
   },
   "jest": {
     "moduleDirectories": [
-      "src/src/components",
+      "src",
       "node_modules"
     ],
     "moduleNameMapper": {
-      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/private/jest/fileMock.js",
-      "^(components|containers)$": "<rootDir>/private/jest/componentsMock.js",
-      "^(store|\\.\\.)\\/selectors$": "<rootDir>/private/jest/selectorsMock.js",
-      "^(store|\\.\\.)\\/actions$": "<rootDir>/private/jest/actionsMock.js"
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__tests__/__mocks__/file.mock.js",
+      "^(components|containers)$": "<rootDir>/__tests__/__mocks__/components.mock.js",
+      "^(store|\\.\\.)\\/selectors$": "<rootDir>/__tests__/__mocks__/selectors.mock.js",
+      "^(store|\\.\\.)\\/actions$": "<rootDir>/__tests__/__mocks__/actions.mock.js"
     }
   },
   "storybook-deployer": {
@@ -96,6 +96,7 @@
     "babel-loader": "^7.0.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-docgen": "^1.6.0",
+    "babel-plugin-root-import": "^5.1.0",
     "babel-plugin-styled-components": "^1.1.7",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.0",
@@ -122,11 +123,13 @@
     "lint-staged": "^4.0.2",
     "opn-cli": "^3.1.0",
     "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "^15.6.0",
     "react-storybook-addon-chapters": "^1.1.0",
     "react-storybook-addon-static-markup": "^0.1.0",
     "react-test-renderer": "^15.5.4",
     "react-theme-provider": "^0.1.3",
     "redux-mock-store": "^1.2.3",
+    "redux-testkit": "^1.0.6",
     "remark-cli": "^4.0.0",
     "remark-lint": "^6.0.0",
     "remark-lint-code": "^2.0.0",
@@ -134,7 +137,6 @@
     "remark-preset-lint-recommended": "^3.0.0",
     "remark-toc": "^4.0.1",
     "rimraf": "^2.6.1",
-    "react-addons-test-utils": "^15.6.0",
     "storybook-addon-a11y": "^3.1.9",
     "storybook-addon-specifications": "^2.1.0",
     "symlink-dir": "^1.1.0",

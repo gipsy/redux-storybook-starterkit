@@ -14,6 +14,7 @@
       "plugins": [
         "transform-es2015-modules-commonjs",
         "babel-plugin-add-module-exports",
+        "babel-plugin-root-import",
         ["styled-components", {
           "preprocess": true,
           "minify": false,
@@ -23,7 +24,8 @@
     },
     "test": {
       "plugins": [
-        "transform-es2015-modules-commonjs"
+        "transform-es2015-modules-commonjs",
+        "babel-plugin-root-import",
       ]
     },
     "production": {

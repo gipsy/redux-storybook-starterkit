@@ -2,7 +2,7 @@ const path = require('path')
 const shell = require('shelljs')
 const chalk = require('chalk')
 
-const packageJson = require('../../app/package.json')
+const packageJson = require('../../package.json')
 
 shell.echo(chalk.bold(`${packageJson.name}@${packageJson.version}`))
 
@@ -13,7 +13,7 @@ const babel = path.join(__dirname, '../..', 'node_modules', '.bin', 'babel')
 const args = [
   '--ignore package.json,server.js,client.js,config.js,node_modules/,tests,__tests__,test.js,stories/,story.jsx,"*.test.js","*.stories.js"',
   '--plugins "transform-runtime","babel-plugin-add-module-exports"',
-  './app/src --out-dir ./app/dist',
+  './src --out-dir ./dist',
   '--copy-files',
 ].join(' ')
 

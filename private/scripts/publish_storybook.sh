@@ -9,8 +9,8 @@ set -e # exit with nonzero exit code if anything fails
 
 # get GIT url
 
-#GIT_URL=`git config --get remote.origin.url`
-GIT_URL="git@github.com:getdinghy/storybook.git"
+GIT_URL=`git config --get remote.origin.url`
+
 if [[ $GIT_URL == "" ]]; then
   echo "This project is not configured with a remote git repo".
   exit 1

@@ -4,7 +4,7 @@ import { reversePalette } from 'styled-theme/composer'
 
 WebFont.load({
   google: {
-    families: ['OpenSans:300,400,400i,600,600i,700,700i,800,800i', 'sans-serif']
+    families: ['Open+Sans:300,400,400i,600,600i,700,700i,800,800i', 'sans-serif']
   }
 })
 

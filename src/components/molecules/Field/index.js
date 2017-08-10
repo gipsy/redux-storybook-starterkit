@@ -1,13 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { font, palette } from 'styled-theme'
 
 import Label from '~/src/components/atoms/Label'
 import Input from '~/src/components/atoms/Input'
 import Block from '~/src/components/atoms/Block'
 
 const Error = styled(Block)`
-  margin: 0.5rem 0 0;
+  font-family: ${font('primary')};
+  font-weight: 600;
+  margin: 0.625rem 0 0;
+  color: ${palette({ danger: 1 }, 2)};
+  font-size: 0.875em;
 `
 
 const Wrapper = styled.div`

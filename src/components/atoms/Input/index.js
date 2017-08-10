@@ -15,11 +15,13 @@ const styles = css`
   box-sizing: border-box;
   font-size: 0.875rem;
   padding: ${ifProp({ type: 'textarea' }, '0.4444444444em', '0 0.4444444444em')};
+  padding-left: 25px;
   height: ${ifProp({ type: 'textarea' }, 'auto', '3.125rem')};
   color: ${palette('grayscale', 0)};
   background-color: ${palette('grayscale', 0, true)};
   border: 2px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
   border-radius: 1px;
+  font-weight: 600;
   -webkit-appearance: none;
   ${placeholder({'color': palette('grayscale', 3, true)})}
 

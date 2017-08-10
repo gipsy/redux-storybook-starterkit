@@ -1,20 +1,27 @@
 // https://github.com/diegohaz/arc/wiki/Styling
+import WebFont from 'webfontloader'
 import { reversePalette } from 'styled-theme/composer'
+
+WebFont.load({
+  google: {
+    families: ['OpenSans:300,400,400i,600,600i,700,700i,800,800i', 'sans-serif']
+  }
+})
 
 const theme = {}
 
 theme.palette = {
   primary: ['#f6a623', '#d68a0c', '#f5c677', '#fee2b4', '#fceed6'],
   secondary: ['#c2185b', '#e91e63', '#f06292', '#f8bbd0'],
-  danger: ['#d32f2f', '#f44336', '#ef828e', '#ffcdd2'],
+  danger: ['#d32f2f', '#ee828e', '#ef828e', '#ffcdd2'],
   alert: ['#ffa000', '#ffc107', '#ffd761', '#ffecb3'],
   success: ['#388e3c', '#4caf50', '#7cc47f', '#c8e6c9'],
   white: ['#fff', '#fefefe', '#eee'],
   grayscale: [
     '#212121',
-    '#414141',
+    '#4a4a4a',
     '#616161',
-    '#9b9b9b',
+    '#e2e2e2',
     '#bdbdbd',
     '#e0e0e0',
     '#eeeeee',
@@ -25,7 +32,7 @@ theme.palette = {
 theme.reversePalette = reversePalette(theme.palette)
 
 theme.fonts = {
-  primary: 'Helvetica Neue, Helvetica, Roboto, sans-serif',
+  primary: 'OpenSans, sans-serif',
   pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace',
   quote: 'Georgia, serif',
 }

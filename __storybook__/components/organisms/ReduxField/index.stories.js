@@ -1,10 +1,10 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { ReduxField } from '~/src/components/organisms/ReduxField'
+import ReduxField from '~/src/components/organisms/ReduxField'
 
 storiesOf('Components', module)
   .addWithChapters(
-    'ReactField',
+    'ReduxField',
     {
       subtitle: 'Subtitle',
       info: `

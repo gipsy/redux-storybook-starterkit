@@ -18,19 +18,19 @@ const styles = css`
   border: 2px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
 
   &::-webkit-input-placeholder {
-    color: ${palette('grayscale', 1, true)};
+    color: ${palette('grayscale', 3, true)};
   }
 
   &::-moz-placeholder {
-    color: ${palette('grayscale', 1, true)};
+    color: ${palette('grayscale', 3, true)};
   }
 
   &:-ms-input-placeholder {
-    color: ${palette('grayscale', 1, true)};
+    color: ${palette('grayscale', 3, true)};
   }
 
   &:-moz-placeholder {
-    color: ${palette('grayscale', 1, true)};
+    color: ${palette('grayscale', 3, true)};
   }
 
   &[type=checkbox], &[type=radio] {

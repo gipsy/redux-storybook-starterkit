@@ -24,6 +24,10 @@ var _noParser = require('styled-components/no-parser');
 
 var _noParser2 = _interopRequireDefault(_noParser);
 
+var _styledTheme = require('styled-theme');
+
+var _polished = require('polished');
+
 var _Label = require('../../atoms/Label');
 
 var _Label2 = _interopRequireDefault(_Label);
@@ -40,12 +44,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Error = (0, _noParser2.default)(_Block2.default).withConfig({
   displayName: 'Field__Error',
-  componentId: 'n065kp-0'
-})([['{margin:0.5rem 0 0;}']]);
+  componentId: 's176mo6e-0'
+})([['{font-family:', (0, _styledTheme.font)('primary'), ';font-weight:600;margin:0.625rem 0 0;color:', (0, _styledTheme.palette)({ danger: 1 }, 2), ';font-size:', (0, _polished.rem)('16px'), ';}']]);
 
 var Wrapper = _noParser2.default.div.withConfig({
   displayName: 'Field__Wrapper',
-  componentId: 'n065kp-1'
+  componentId: 's176mo6e-1'
 })([['{margin-bottom:1rem;}'], [' input[type="checkbox"],'], [' input[type="radio"]{margin-right:0.5rem;}'], [' label{vertical-align:middle;}']]);
 
 var Field = function Field(_ref) {

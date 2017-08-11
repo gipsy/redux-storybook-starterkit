@@ -16,14 +16,17 @@ var _reduxForm = require('redux-form');
 
 var _reduxSagaThunk = require('redux-saga-thunk');
 
+var _reduxBreakpoint = require('redux-breakpoint');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_leanRedux.leanReducer.setGlobalScope('lean'); // https://github.com/diegohaz/arc/wiki/Reducers
-
+// https://github.com/diegohaz/arc/wiki/Reducers
+_leanRedux.leanReducer.setGlobalScope('lean');
 
 var reducers = {
   form: _reduxForm.reducer,
-  thunk: _reduxSagaThunk.reducer
+  thunk: _reduxSagaThunk.reducer,
+  breakpoint: _reduxBreakpoint.breakpointReducer
 };
 
 var req = require.context('.', true, /\.\/.+\/reducer\.js$/);

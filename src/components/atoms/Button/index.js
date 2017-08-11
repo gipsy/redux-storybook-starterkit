@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 import Link from 'react-router-dom/Link'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
-import { darken } from 'polished'
+import { darken, rem } from 'polished'
 
 const fontSize = ({ height }) => `${height / 40}rem`
 
@@ -22,16 +22,13 @@ const styles = css`
   font-family: ${font('primary')};
   align-items: center;
   white-space: nowrap;
-  font-size: 14px;
-  border: 0.0625em solid ${ifProp('transparent', 'currentcolor', 'transparent')};
-  height: 2.5em;
-  width: 147px;
+  text-transform: uppercase;
+  border: 2px solid ${ifProp('transparent', 'currentcolor', 'transparent')};
+  width: auto;
   justify-content: center;
   text-decoration: none;
   cursor: ${ifProp('disabled', 'default', 'pointer')};
   appearance: none;
-  padding: 0 1em;
-  border-radius: 0.125em;
   box-sizing: border-box;
   pointer-events: ${ifProp('disabled', 'none', 'auto')};
   transition: background-color 250ms ease-out, color 250ms ease-out, border-color 250ms ease-out;
@@ -49,6 +46,26 @@ const styles = css`
 
   &:focus {
     outline: none
+  }
+
+  @media (max-width: 420px) {
+    font-size: ${rem('14px')};
+    font-weight: 800;
+    height: ${rem('50px')};
+    padding-top: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
+    padding-bottom: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
+    border-radius: 1px;
+    min-width: 295px;
+  }
+
+  @media (min-width: 421px) {
+    font-size: ${rem('18px')};
+    font-weight: 800;
+    height: ${rem('60px')};
+    padding-top: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
+    padding-bottom: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
+    border-radius: 3px;
+    min-width: 337px;
   }
 `
 

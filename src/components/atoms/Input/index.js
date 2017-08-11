@@ -1,29 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
+import breakpoint from 'styled-components-breakpoint'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
-import { placeholder } from 'polished'
-
-const fontSize = ({ height }) => `${height / 35.5555555556}rem`
+import { placeholder, rem } from 'polished'
 
 const styles = css`
   font-family: ${font('primary')};
+  font-weight: 600;
   display: block;
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  font-size: 0.875rem;
-  padding: ${ifProp({ type: 'textarea' }, '0.4444444444em', '0 0.4444444444em')};
-  padding-left: 25px;
-  height: ${ifProp({ type: 'textarea' }, 'auto', '3.125rem')};
   color: ${palette('grayscale', 0)};
   background-color: ${palette('grayscale', 0, true)};
   border: 2px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
-  border-radius: 1px;
-  font-weight: 600;
-  -webkit-appearance: none;
-  ${placeholder({'color': palette('grayscale', 3, true)})}
+
+  &::-webkit-input-placeholder {
+    color: ${palette('grayscale', 1, true)};
+  }
+
+  &::-moz-placeholder {
+    color: ${palette('grayscale', 1, true)};
+  }
+
+  &:-ms-input-placeholder {
+    color: ${palette('grayscale', 1, true)};
+  }
+
+  &:-moz-placeholder {
+    color: ${palette('grayscale', 1, true)};
+  }
 
   &[type=checkbox], &[type=radio] {
     display: inline-block;
@@ -33,10 +41,32 @@ const styles = css`
     height: auto;
     margin: 0 0.2rem 0 0;
   }
+
+  @media (max-width: 420px) {
+    font-size: ${rem('14px')};
+    height: ${ifProp({ type: 'textarea' }, 'auto', rem('50px'))};
+    padding-top: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
+    padding-bottom: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
+    padding-left: ${ifProp({ type: 'textarea' }, rem('25px'), rem('25px'))};
+    border-radius: 1px;
+  }
+
+  @media (min-width: 421px) {
+    font-size: ${rem('18px')};
+    height: ${ifProp({ type: 'textarea' }, 'auto', rem('60px'))};
+    padding-top: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
+    padding-bottom: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
+    padding-left: ${ifProp({ type: 'textarea' }, rem('30.5px'), rem('30.5px'))};
+    border-radius: 3px;
+  }
 `
 
 const StyledTextarea = styled.textarea`${styles}`
-const StyledSelect = styled.select`${styles}`
+const StyledSelect = styled.select`
+  ${styles}
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+`
 const StyledInput = styled.input`${styles}`
 
 const Input = ({ ...props }) => {

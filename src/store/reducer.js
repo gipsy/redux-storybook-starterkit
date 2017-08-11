@@ -4,12 +4,14 @@ import { combineReducers } from 'redux'
 import {leanReducer} from 'lean-redux'
 import { reducer as form } from 'redux-form'
 import { reducer as thunk } from 'redux-saga-thunk'
+import { breakpointReducer } from 'redux-breakpoint'
 
 leanReducer.setGlobalScope('lean')
 
 const reducers = {
   form,
   thunk,
+  breakpoint: breakpointReducer
 }
 
 const req = require.context('.', true, /\.\/.+\/reducer\.js$/)

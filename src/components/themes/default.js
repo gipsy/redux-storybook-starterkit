@@ -4,7 +4,7 @@ import { reversePalette } from 'styled-theme/composer'
 
 WebFont.load({
   google: {
-    families: ['Open+Sans:300,400,400i,600,600i,700,700i,800,800i', 'sans-serif']
+    families: ['Lato:100,100i,300,300i,400,400i,700,700i,900,900i', 'sans-serif']
   }
 })
 
@@ -18,11 +18,11 @@ theme.palette = {
   success: ['#388e3c', '#4caf50', '#7cc47f', '#c8e6c9'],
   white: ['#fff', '#fefefe', '#eee'],
   grayscale: [
-    '#212121',
+    '#333333',
     '#4a4a4a',
     '#616161',
     '#e2e2e2',
-    '#bdbdbd',
+    '#9b9b9b',
     '#e0e0e0',
     '#eeeeee',
     '#ffffff',
@@ -32,7 +32,7 @@ theme.palette = {
 theme.reversePalette = reversePalette(theme.palette)
 
 theme.fonts = {
-  primary: 'OpenSans, sans-serif',
+  primary: 'Lato, sans-serif',
   pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace',
   quote: 'Georgia, serif',
 }
@@ -40,30 +40,5 @@ theme.fonts = {
 theme.sizes = {
   maxWidth: '1100px',
 }
-
-const sizes = {
-  desktop: 992,
-  phone: 376
-}
-
-// Iterate through the sizes and create a media template
-const media = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (max-width: ${sizes[label] / 16}em) {
-      ${css(...args)}
-    }
-  `
-  return acc
-}, {})
-
-// const Content = styled.div`
-//   height: 3em;
-//   width: 3em;
-//   background: papayawhip;
-//
-//   #<{(| Now we have our methods on media and can use them instead of raw queries |)}>#
-//   ${media.desktop`background: #fff;`}
-//   ${media.phone`background: #000;`}
-// `;
 
 export default theme

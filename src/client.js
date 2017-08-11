@@ -7,6 +7,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import { ServerStateProvider } from 'react-router-server'
+import syncBreakpointWithStore from 'redux-breakpoint'
 
 import { basename } from '~/src/config'
 import configureStore from '~/src/store/configure'
@@ -16,6 +17,7 @@ import App from '~/src/components/App'
 const serverState = window.__SERVER_STATE__
 const initialState = window.__INITIAL_STATE__
 const store = configureStore(initialState, { api: api.create() })
+syncBreakpointWithStore(store)
 
 const renderApp = () => (
   <ServerStateProvider state={serverState}>

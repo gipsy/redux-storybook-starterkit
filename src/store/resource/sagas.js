@@ -1,7 +1,7 @@
 // https://github.com/diegohaz/arc/wiki/Sagas
 // https://github.com/diegohaz/arc/wiki/Example-redux-modules#resource
 import { take, put, call, fork } from 'redux-saga/effects'
-import * as actions from './actions'
+import * as actions from '~/src/store/resource/actions'
 
 export function* createResource(api, { data }, { resource, thunk }) {
   try {

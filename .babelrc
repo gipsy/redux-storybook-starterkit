@@ -8,13 +8,13 @@
   ],
   "plugins": [
     "react-hot-loader/babel",
-    "transform-runtime"
   ],
   "env": {
     "development": {
       "plugins": [
         "transform-es2015-modules-commonjs",
         "babel-plugin-root-import",
+        "transform-runtime",
         ["styled-components", {
           "preprocess": true,
           "minify": false,
@@ -32,8 +32,9 @@
       "plugins": [
         "transform-react-remove-prop-types",
         "babel-plugin-root-import",
+        "transform-runtime",
         ["styled-components", {
-          "displayName": false
+          "displayName": true
         }]
       ]
     }

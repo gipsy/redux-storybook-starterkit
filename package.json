@@ -15,8 +15,8 @@
     "lint:js": "eslint src,private webpack.config.js --cache --cache-location=.cache/eslint --ext .js,.jsx,.json",
     "lint:md": "remark .",
     "precommit": "lint-staged",
-    "storybook": "start-storybook -p 9001 -c __storybook__",
-    "build-storybook": "build-storybook -c __storybook__",
+    "storybook": "start-storybook -p 9001 -c storybook",
+    "build-storybook": "build-storybook -c storybook",
     "deploy-storybook": "bash private/scripts/publish_storybook.sh",
     "predev": "npm run prebuild",
     "dev": "npm run env:dev -- webpack-dev-server",
@@ -35,10 +35,10 @@
       "node_modules"
     ],
     "moduleNameMapper": {
-      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__tests__/__mocks__/file.mock.js",
-      "^(components|containers)$": "<rootDir>/__tests__/__mocks__/components.mock.js",
-      "^(store|\\.\\.)\\/selectors$": "<rootDir>/__tests__/__mocks__/selectors.mock.js",
-      "^(store|\\.\\.)\\/actions$": "<rootDir>/__tests__/__mocks__/actions.mock.js"
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/mocks/file.mock.js",
+      "^(components|containers)$": "<rootDir>/tests/mocks/components.mock.js",
+      "^(store|\\.\\.)\\/selectors$": "<rootDir>/tests/mocks/selectors.mock.js",
+      "^(store|\\.\\.)\\/actions$": "<rootDir>/tests/mocks/actions.mock.js"
     }
   },
   "storybook-deployer": {
@@ -152,6 +152,7 @@
     "webpack-spawn-plugin": "^0.1.1"
   },
   "dependencies": {
+    "@dr-kobros/react-webfont-loader": "^2.0.1",
     "babel-polyfill": "^6.20.0",
     "babel-runtime": "^6.25.0",
     "express": "^4.15.2",
@@ -178,8 +179,8 @@
     "react-router-server": "^4.2.1",
     "react-storybook-addon-template": "^3.1.1",
     "redux": "^3.6.0",
-    "redux-breakpoint": "^3.0.6",
     "redux-form": "^7.0.0",
+    "redux-responsive": "^4.3.2",
     "redux-saga": "^0.15.0",
     "redux-saga-thunk": "^0.5.0",
     "serialize-javascript": "^1.3.0",

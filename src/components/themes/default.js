@@ -1,12 +1,11 @@
 // https://github.com/diegohaz/arc/wiki/Styling
-import WebFont from 'webfontloader'
 import { reversePalette } from 'styled-theme/composer'
 
-WebFont.load({
+export const webfontLoaderConfig = {
   google: {
     families: ['Lato:100,100i,300,300i,400,400i,700,700i,900,900i', 'sans-serif']
   }
-})
+};
 
 const theme = {}
 

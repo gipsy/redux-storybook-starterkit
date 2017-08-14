@@ -1726,6 +1726,11 @@ theme.sizes = {
   maxWidth: '1100px'
 };
 
+theme.radiuses = {
+  mobileRadius: '1px',
+  desktopRadius: '3px'
+};
+
 var _default = theme;
 exports.default = _default;
 ;

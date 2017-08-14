@@ -40,4 +40,9 @@ theme.sizes = {
   maxWidth: '1100px',
 }
 
+theme.radiuses = {
+  mobileRadius: '1px',
+  desktopRadius: '3px'
+}
+
 export default theme

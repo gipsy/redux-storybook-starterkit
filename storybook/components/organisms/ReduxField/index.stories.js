@@ -24,7 +24,8 @@ storiesOf('Components', module)
                 <ReduxField input={{
                     name: 'name',
                     placeholder: 'enter text here',
-                    label: 'Lets’ get started, How would  you describe yourself?'
+                    label: 'Lets’ get started, How would  you describe yourself?',
+                    height: 50
                   }} 
                   meta={{
                   }}

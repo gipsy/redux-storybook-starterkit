@@ -9,6 +9,7 @@ import '@storybook/addon-chapters'
 //import centered from '@storybook/react-storybook-decorator-centered'
 import chaptersAddon from 'react-storybook-addon-chapters'
 import staticMarkup from 'react-storybook-addon-static-markup'
+import templateAddon from 'react-storybook-addon-template'
 import { ThemeProvider } from 'styled-components'
 import configureStore from '~/src/store/configure'
 import api from '~/src/services/api'
@@ -16,9 +17,11 @@ import theme from '~/src/components/themes/default'
 
 setAddon(chaptersAddon)
 setAddon(staticMarkup)
+setAddon(templateAddon)
+
 
 const store = configureStore({}, { api: api.create() })
-const req = require.context('.', true, /.stories.js$/)
+const req = require.context('../storybook', true, /.stories.js$/)
 
 function loadStories() {
   req.keys().forEach(filename => req(filename))
@@ -28,12 +31,14 @@ setOptions({
   name: 'Dinghy Design System',
   url: 'https://github.com/getdinghy/design_system',
   goFullScreen: false,
+  leftPanelHierarchy: true,
+  sidebarAnimations: true,
   showLeftPanel: true,
   showDownPanel: true,
   showSearchBox: false,
   downPanelInRight: false,
-  sortStoriesByKind: false,
-  hierachySeparator: '\\.',
+  sortStoriesByKind: true,
+  hierarchySeparator: /\/|\./,
 });
 
 // addon-info 
@@ -50,7 +55,9 @@ setDefaults({
 addDecorator(story => (
   <Provider store={store}>
     <BrowserRouter>
-      <ThemeProvider theme={theme}>{story()}</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        {story()}
+      </ThemeProvider>
     </BrowserRouter>
   </Provider>
 ))

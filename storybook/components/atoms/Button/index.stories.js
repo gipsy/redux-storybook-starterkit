@@ -9,7 +9,7 @@ import { ShowStaticMarkup } from 'react-storybook-addon-static-markup'
 
 storiesOf('Components', module)
   .addWithChapters(
-    'Buttons',
+    'Button',
     {
       subtitle: 'Subtitle',
       info: `

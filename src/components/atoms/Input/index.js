@@ -2,11 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import breakpoint from 'styled-components-breakpoint'
-import { font, palette, radiuses } from 'styled-theme'
+import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 import { placeholder, rem } from 'polished'
-
-import theme from '~/src/components/themes/default'
 
 const styles = css`
   font-family: ${font('primary')};

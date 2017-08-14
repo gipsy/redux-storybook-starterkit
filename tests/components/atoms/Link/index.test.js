@@ -23,3 +23,8 @@ it('renders Link when prop to is passed in', () => {
   const wrapper = wrap({ to: 'test' }).dive()
   expect(wrapper.find('NavLink')).toHaveLength(1)
 })
+
+test('<Link /> renders with palette: primary as prop', () => {
+  const wrapper = wrap({ palette: 'primary' })
+  expect(wrapper).toMatchSnapshot()
+})

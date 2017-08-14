@@ -34,12 +34,19 @@
       "src",
       "node_modules"
     ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
     "moduleNameMapper": {
-      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/mocks/file.mock.js",
-      "^(components|containers)$": "<rootDir>/tests/mocks/components.mock.js",
-      "^(store|\\.\\.)\\/selectors$": "<rootDir>/tests/mocks/selectors.mock.js",
-      "^(store|\\.\\.)\\/actions$": "<rootDir>/tests/mocks/actions.mock.js"
-    }
+      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/file.mock.js",
+      "^.+\\.(css|scss)$": "identity-obj-proxy",
+      "^(components|containers)$": "<rootDir>/tests/__mocks__/components.mock.js",
+      "^(store|\\.\\.)\\/selectors$": "<rootDir>/tests/__mocks__/selectors.mock.js",
+      "^(store|\\.\\.)\\/actions$": "<rootDir>/tests/__mocks__/actions.mock.js"
+    },
+    "setupFiles": [
+      "./tests/jestsetup.js"
+    ]
   },
   "storybook-deployer": {
     "gitUsername": "gipsy",
@@ -155,10 +162,12 @@
     "@dr-kobros/react-webfont-loader": "^2.0.1",
     "babel-polyfill": "^6.20.0",
     "babel-runtime": "^6.25.0",
+    "enzyme-to-json": "^1.5.1",
     "express": "^4.15.2",
     "graceful-fs": "^4.1.11",
     "grid-styled": "^2.0.0-10",
     "history": "^4.6.1",
+    "identity-obj-proxy": "^3.0.0",
     "isomorphic-fetch": "^2.2.1",
     "lean-redux": "^3.3.1",
     "lodash": "^4.17.4",

@@ -13,3 +13,8 @@ it('renders props when passed in', () => {
   const wrapper = wrap({ id: 'foo' })
   expect(wrapper.find({ id: 'foo' })).toHaveLength(1)
 })
+
+test('<Paragraph /> renders with reverse: true as prop', () => {
+  const wrapper = wrap({ reverse: true })
+  expect(wrapper).toMatchSnapshot()
+})

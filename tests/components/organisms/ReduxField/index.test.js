@@ -49,3 +49,18 @@ it('renders error when passed in', () => {
   const wrapper = wrap({ meta: { error: 'test error' } })
   expect(wrapper.find({ error: 'test error' })).toHaveLength(1)
 })
+
+test('<ReduxField /> renders with all allowed props', () => {
+  const wrapper = wrap({
+    input: {
+      name: 'test',
+      placeholder: 'test',
+      label: 'test',
+    },
+    meta: {
+      touched: true,
+      error: 'Invalid'
+    }
+  })
+  expect(wrapper).toMatchSnapshot()
+})

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paragraph /> renders with reverse: true as prop 1`] = `
+<p
+  className="sc-bdVaJa diCAxF"
+/>
+`;

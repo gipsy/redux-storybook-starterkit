@@ -23,3 +23,8 @@ it('renders hLevel when level is passed in', () => {
   const wrapper = wrap({ level: 2 })
   expect(wrapper.find('h2')).toHaveLength(1)
 })
+
+test('<Heading /> renders with children as prop', () => {
+  const wrapper = wrap({ children: 'Test heading!' })
+  expect(wrapper).toMatchSnapshot()
+})

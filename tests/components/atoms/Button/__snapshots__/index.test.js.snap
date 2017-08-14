@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders with text as prop 1`] = `
+<button
+  className="sc-htpNat eqvInV"
+  height={50}
+  type="button"
+>
+  add to bag
+</button>
+`;

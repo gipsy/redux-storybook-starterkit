@@ -13,3 +13,8 @@ it('renders props when passed in', () => {
   const wrapper = wrap({ htmlFor: 'foo' })
   expect(wrapper.find({ htmlFor: 'foo' })).toHaveLength(1)
 })
+
+it('should render a label', () => {
+  const wrapper = wrap({ children: 'Hello Jest!' })
+  expect(wrapper).toMatchSnapshot()
+})

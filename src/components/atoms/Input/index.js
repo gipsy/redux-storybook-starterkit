@@ -75,7 +75,7 @@ const Input = ({ ...props }) => {
   } else if (props.type === 'select') {
     return <StyledSelect {...props} />
   }
-  return <StyledInput className={props.invalid ? "is--invalid" : null} {...props} />
+  return <StyledInput {...props} />
 }
 
 Input.propTypes = {

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> renders with palette: primary as prop 1`] = `
+<a
+  className="sc-bwzfXH cPzigO"
+/>
+`;

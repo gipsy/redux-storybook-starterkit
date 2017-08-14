@@ -23,3 +23,8 @@ it('renders textarea when type is textarea', () => {
   const wrapper = wrap({ type: 'textarea' })
   expect(wrapper.find('textarea')).toHaveLength(1)
 })
+
+test('<Input /> renders with invalid as prop', () => {
+  const wrapper = wrap({ invalid: true })
+  expect(wrapper).toMatchSnapshot()
+})

@@ -3,8 +3,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Icon from '~/src/components/atoms/Icon'
 
-storiesOf('Icon', module)
-  .add('default', () => (
+storiesOf('Components.Atoms', module)
+  .add('Icon', () => (
     <Icon icon="close" />
   ))
   .add('palette', () => (

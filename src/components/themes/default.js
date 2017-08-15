@@ -1,11 +1,22 @@
 // https://github.com/diegohaz/arc/wiki/Styling
 import { reversePalette } from 'styled-theme/composer'
+import { rem } from 'polished'
 
 export const webfontLoaderConfig = {
   google: {
     families: ['Lato:100,100i,300,300i,400,400i,700,700i,900,900i', 'sans-serif']
   }
 };
+
+export const responsiveRadiuses = {
+  mobile: '1px',
+  desktop: '3px'
+}
+
+export const responsiveFontSizes = {
+  mobile: rem('14px'),
+  desktop: rem('16px'),
+}
 
 const theme = {}
 
@@ -22,10 +33,11 @@ theme.palette = {
     '#616161',
     '#e2e2e2',
     '#9b9b9b',
-    '#e0e0e0',
+    '#dadada',
     '#eeeeee',
     '#ffffff',
   ],
+  black: ['#000000']
 }
 
 theme.reversePalette = reversePalette(theme.palette)

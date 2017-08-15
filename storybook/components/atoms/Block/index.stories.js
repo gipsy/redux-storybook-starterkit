@@ -2,8 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Block from '~/src/components/atoms/Block'
 
-storiesOf('Block', module)
-  .add('default', () => (
+storiesOf('Components.Atoms', module)
+  .add('Block', () => (
     <Block>Officia aliqua reprehenderit fugiat occaecat quis non eiusmod.</Block>
   ))
   .add('reverse', () => (

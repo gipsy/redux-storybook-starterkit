@@ -2,14 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { IconLink } from '~/src/components/molecules/IconLink'
 
-storiesOf('IconLink', module)
-  .add('default', () => (
+storiesOf('Components.Molecules', module)
+  .add('IconLink', () => (
     <IconLink icon="close" href="#">Hello</IconLink>
   ))
-  .add('right', () => (
-    <IconLink icon="close" href="#" right>Hello</IconLink>
-  ))
-  .add('inside paragraph', () => (
-    <p>Consequat cupidatat id <IconLink icon="close" href="#">excepteur</IconLink> ex nisi proident et sunt fugiat id pariatur.</p>
-  ))
-  .disable(enableFn => {false})

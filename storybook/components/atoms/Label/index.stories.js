@@ -2,8 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Label from '~/src/components/atoms/Label'
 
-storiesOf('Label', module)
-  .add('default', () => (
+storiesOf('Components.Atoms', module)
+  .add('Label', () => (
     <Label>Hello</Label>
   ))
   .add('reverse', () => (

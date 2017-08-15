@@ -5,6 +5,7 @@ import breakpoint from 'styled-components-breakpoint'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 import { placeholder, rem } from 'polished'
+import { responsiveRadiuses as radius } from '~/src/components/themes/default'
 
 const styles = css`
   font-family: ${font('primary')};
@@ -48,7 +49,7 @@ const styles = css`
     padding-top: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
     padding-bottom: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
     padding-left: ${ifProp({ type: 'textarea' }, rem('25px'), rem('25px'))};
-    border-radius: 1px;
+    border-radius: radius.mobile;
   }
 
   @media (min-width: 421px) {
@@ -57,7 +58,7 @@ const styles = css`
     padding-top: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
     padding-bottom: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
     padding-left: ${ifProp({ type: 'textarea' }, rem('30.5px'), rem('30.5px'))};
-    border-radius: 3px;
+    border-radius: radius.mobile;
   }
 `
 

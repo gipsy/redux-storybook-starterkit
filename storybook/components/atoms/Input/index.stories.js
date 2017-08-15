@@ -2,8 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Input from '~/src/components/atoms/Input'
 
-storiesOf('Input', module)
-  .add('default', () => (
+storiesOf('Components.Atoms', module)
+  .add('Input', () => (
     <Input />
   ))
   .add('reverse', () => (

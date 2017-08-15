@@ -7,7 +7,7 @@ import { withKnobs, text, boolean, number } from '@storybook/addon-knobs'
 import Button from '~/src/components/atoms/Button'
 import { ShowStaticMarkup } from 'react-storybook-addon-static-markup'
 
-storiesOf('Components', module)
+storiesOf('Components.Atoms', module)
   .addWithChapters(
     'Button',
     {
@@ -26,7 +26,7 @@ storiesOf('Components', module)
             associated with the explorative nature of the secondary CTA’s.
           `,
           sections: [
-            // List of sections.
+            // List of sections
             {
               title: 'This is Default Button',
               subtitle: 'Each section can be used to render a component',

@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import ReduxField from '~/src/components/organisms/ReduxField'
 
-storiesOf('Components.Organisms', module)
+storiesOf('Components/Organisms', module)
   .addWithChapters(
     'ReduxField',
     {

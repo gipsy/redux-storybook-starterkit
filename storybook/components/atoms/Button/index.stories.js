@@ -4,10 +4,11 @@ import { checkA11y } from 'storybook-addon-a11y'
 import { addDecorator } from '@storybook/react'
 import { action, decorateAction } from '@storybook/addon-actions'
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs'
-import Button from '~/src/components/atoms/Button'
 import { ShowStaticMarkup } from 'react-storybook-addon-static-markup'
 
-storiesOf('Components.Atoms', module)
+import Button from '~/src/components/atoms/Button'
+
+storiesOf('Components/Atoms', module)
   .addWithChapters(
     'Button',
     {

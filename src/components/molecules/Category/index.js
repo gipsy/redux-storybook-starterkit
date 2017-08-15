@@ -45,7 +45,7 @@ const styles = css`
 const StyledCategory = styled.div`${styles}`
 
 const StyledIcon = styled(Icon)`
-  color: ${palette('black', 0)}
+  color: ${palette('black', 0)};
 
   @media screen and (max-width: 420px) {
     font-size: ${rem('46.6px')};
@@ -61,7 +61,7 @@ const StyledIcon = styled(Icon)`
 
 const Text = styled.span`
   font-family: ${font('primary')};
-  color: ${palette('grayscale', 0, false)}
+  color: ${palette('grayscale', 0, false)};
   position: absolute;
   left: 0;
   right: 0;

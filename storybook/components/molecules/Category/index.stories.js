@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Category from '~/src/components/molecules/Category'
 
-storiesOf('Components.Molecules', module)
+storiesOf('Components/Molecules', module)
   .addWithChapters(
     'Category' ,
     {

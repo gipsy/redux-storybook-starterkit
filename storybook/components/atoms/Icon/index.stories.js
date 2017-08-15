@@ -1,9 +1,11 @@
 // https://github.com/diegohaz/arc/wiki/Example-components#icon
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { ShowStaticMarkup } from 'react-storybook-addon-static-markup'
+
 import Icon from '~/src/components/atoms/Icon'
 
-storiesOf('Components.Atoms', module)
+storiesOf('Components/Atoms', module)
   .addWithChapters(
     'Icon',
     {

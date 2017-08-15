@@ -61,7 +61,7 @@ const StyledIcon = styled(Icon)`
 
 const Text = styled.span`
   font-family: ${font('primary')};
-  color: ${palette('grayscale', 0, false)};
+  color: ${palette('grayscale', 0)};
   position: absolute;
   left: 0;
   right: 0;
@@ -84,13 +84,15 @@ const Text = styled.span`
   }
 `
 
-const Category = ({ icon, responsive, children, ...props }) => {
+const Category = ({ width, height, icon, responsive, children, ...props }) => {
   const iconElement = (
     <StyledIcon
       icon={icon}
       responsive={responsive}
       palette={props.palette}
       reverse={props.reverse}
+      width={width}
+      height={height}
     />
   )
   return (
@@ -108,6 +110,8 @@ Category.propTypes = {
   children: PropTypes.string,
   reverse: PropTypes.bool,
   children: PropTypes.node,
+  width: PropTypes.integer,
+  height: PropTypes.integer,
 }
 
 export default Category

@@ -10,12 +10,17 @@ export const webfontLoaderConfig = {
 
 export const responsiveRadiuses = {
   mobile: '1px',
-  desktop: '3px'
+  desktop: '3px',
 }
 
 export const responsiveFontSizes = {
   mobile: rem('14px'),
   desktop: rem('16px'),
+}
+
+export const responsiveHeaderHeights = {
+  mobile: rem('40px'),
+  desktop: rem('50px'),
 }
 
 const theme = {}

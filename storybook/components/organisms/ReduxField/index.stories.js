@@ -27,8 +27,7 @@ storiesOf('Components/Organisms', module)
                     label: 'Lets’ get started, How would  you describe yourself?',
                     height: 50
                   }} 
-                  meta={{
-                  }}
+                  meta={{}}
                 />
               ),
               options: {

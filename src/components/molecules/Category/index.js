@@ -21,6 +21,10 @@ const styles = css`
   cursor: pointer;
   ${transitions('border-color .1s ease-in')};
 
+  &:hover {
+    border-color: ${palette('grayscale', 3, true)}
+  }
+
   @media screen and (max-width: 420px) {
     font-size: ${fontSize.mobile};
     border: 2px solid ${palette('grayscale', 2, true)};
@@ -35,10 +39,6 @@ const styles = css`
     border-radius: 6px;
     height: 245px;
     width: ${({ responsive }) => responsive ? '100%' : rem('160px')};
-  }
-
-  &:hover {
-    border-color: ${palette('grayscale', 3, true)}
   }
 `
 

@@ -7,7 +7,7 @@ import Footer from 'components/organisms/Footer'
 
 const HomePage = () => {
   return (
-    <PageTemplate header={<Header />} footer={<Footer />}>
+    <PageTemplate header={<Header />}>
     </PageTemplate>
   )
 }

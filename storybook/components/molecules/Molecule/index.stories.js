@@ -1,9 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Molecule } from '~/src/components/molecules/Molecule'
+import Molecule from '~/src/components/molecules/Molecule'
 
-storiesOf('Molecule', module)
-  .add('default', () => (
+storiesOf('Components/Molecules', module)
+  .add('Molecule', () => (
     <Molecule>Hello</Molecule>
   ))
   .add('reverse', () => (

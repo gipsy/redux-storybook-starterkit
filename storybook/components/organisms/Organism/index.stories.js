@@ -1,9 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Organism } from '~/src/components/organisms/Organism'
+import Organism from '~/src/components/organisms/Organism'
 
-storiesOf('Organism', module)
-  .add('default', () => (
+storiesOf('Components/Organisms', module)
+  .add('Organism', () => (
     <Organism />
   ))
   .add('reverse', () => (

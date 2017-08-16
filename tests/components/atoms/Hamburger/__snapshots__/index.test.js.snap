@@ -2,7 +2,7 @@
 
 exports[`<Hamburger /> renders props 1`] = `
 <span
-  className="sc-bdVaJa gmkPva"
+  className="s185djk0-0 cVrnen"
 >
   <styled.span />
   <styled.span />

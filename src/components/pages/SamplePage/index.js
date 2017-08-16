@@ -17,7 +17,7 @@ const SamplePage = () => {
         }}
         meta={{}}
       />
-      <Button label="Next" onClick={() => { alert('Test!'); }} />
+      <Button text="Next" onClick={() => { alert('Test!'); }} />
     </PageTemplate>
   )
 }

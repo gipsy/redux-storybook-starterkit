@@ -2,7 +2,7 @@
 
 exports[`<Heading /> renders with children as prop 1`] = `
 <h1
-  className="sc-bdVaJa jzljMk"
+  className="h1hkui-0 eISGLG"
 >
   Test heading!
 </h1>

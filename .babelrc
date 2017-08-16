@@ -26,6 +26,12 @@
       "plugins": [
         "transform-es2015-modules-commonjs",
         "babel-plugin-root-import",
+        ["styled-components", {
+          "displayName": false,
+          "preprocess": false,
+          "minify": false,
+          "ssr": true
+        }]
       ]
     },
     "production": {
@@ -34,7 +40,7 @@
         "babel-plugin-root-import",
         "transform-runtime",
         ["styled-components", {
-          "displayName": true
+          "displayName": false
         }]
       ]
     }

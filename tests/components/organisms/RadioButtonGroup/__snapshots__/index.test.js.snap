@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioButtonGroup /> renders with list of buttons array 1`] = `
+<div>
+  <label>
+    <styled.input
+      name="options"
+      type="radio"
+      value="under 250"
+    />
+    <span>
+      under £250
+    </span>
+  </label>
+  <label>
+    <styled.input
+      name="options"
+      type="radio"
+      value="250 - 500"
+    />
+    <span>
+      £250 - £500
+    </span>
+  </label>
+</div>
+`;

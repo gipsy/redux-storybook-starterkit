@@ -27,8 +27,8 @@ storiesOf('Components/Molecules', module)
                 <Category
                   icon="code"
                   responsive
-                  width="46"
-                  height="26"
+                  width={46}
+                  height={26}
                   onClick={() => { alert('Hello World!'); }}
                 >
                   tech / project

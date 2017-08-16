@@ -2,47 +2,47 @@
 
 exports[`renders a snapshot 1`] = `
 <div
-  className="sc-bdVaJa kyldDh"
+  className="s1tka1h4-0 jBwvUr"
 >
   <header
-    className="sc-bwzfXH fkWUxN"
+    className="s1tka1h4-1 vhBJz"
   >
     <div
-      className="sc-gqjmRU fObOYL sc-dnqmqq cTuhVT"
+      className="scnd7z-0 jySewm s1ow7xdi-0 yysEl"
     >
       <div
-        className="sc-VigVT gcLekX"
+        className="scnd7z-1 gpyZIN"
       >
         <span
-          className="sc-iwsKbI eXZgwI"
+          className="s185djk0-0 isQUSV"
         >
           <span
-            className="sc-gZMcBi bndDEq"
+            className="s185djk0-1 knvZlA"
           />
           <span
-            className="sc-gZMcBi bndDEq"
+            className="s185djk0-1 knvZlA"
           />
           <span
-            className="sc-gZMcBi bndDEq"
+            className="s185djk0-1 knvZlA"
           />
         </span>
       </div>
     </div>
   </header>
   <section
-    className="sc-htpNat eBEIfo"
+    className="s1tka1h4-2 kQfrHL"
   >
     <h1
-      className="sc-cSHVUG brYHsq"
+      className="h1hkui-0 eISGLG"
     >
       Where is the company based?
     </h1>
     <div
-      className="sc-dxgOiQ gxwVJt"
+      className="s11en7sr-1 kFAILu"
     >
       <input
         aria-describedby="nameError"
-        className="sc-kGXeez cIxeuZ"
+        className="s18s8jm-2 eAKhcq"
         height={50}
         id="name"
         name="name"
@@ -51,17 +51,16 @@ exports[`renders a snapshot 1`] = `
       />
     </div>
     <button
-      className="sc-eNQAEJ cPaiDp"
+      className="gdfyvv-2 iWIvIi"
       height={50}
-      label="Next"
       onClick={[Function]}
       type="button"
     >
-      Button Example
+      Next
     </button>
   </section>
   <footer
-    className="sc-bxivhb bQeSTw"
+    className="s1tka1h4-3 fXJNHB"
   />
 </div>
 `;

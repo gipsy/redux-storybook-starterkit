@@ -21,6 +21,8 @@ test('<Category /> renders with all allowed props', () => {
     palette: 'primary',
     reverse: true,
     responsive: true,
+    width: 46,
+    height: 26,
     icon: 'path/to/icon'
   })
   expect(wrapper).toMatchSnapshot()

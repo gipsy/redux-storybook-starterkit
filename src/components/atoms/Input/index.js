@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
 import { font, palette } from 'styled-theme'
 import { ifProp } from 'styled-tools'
 import { placeholder, rem, transitions } from 'polished'
-import { responsiveRadiuses as radius } from '~/src/components/themes/default'
+import { responsiveBorderRadiuses as radius } from '~/src/components/themes/default'
+import { responsiveFontSizes as fontSize } from '~/src/components/themes/default'
 
 const styles = css`
   font-family: ${font('primary')};
@@ -17,7 +17,6 @@ const styles = css`
   color: ${palette('grayscale', 0)};
   outline: none;
   background-color: ${palette('grayscale', 0, true)};
-  border: 2px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
   ${transitions('border-color .1s ease-in')};
 
   &::-webkit-input-placeholder {
@@ -50,23 +49,25 @@ const styles = css`
   }
 
   @media (max-width: 420px) {
-    font-size: ${rem('14px')};
+    font-size: ${fontSize.mobile};
     height: ${ifProp({ type: 'textarea' }, 'auto', rem('50px'))};
     padding-top: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
     padding-bottom: ${ifProp({ type: 'textarea' }, rem('16px'), rem('16px'))};
     padding-left: ${ifProp({ type: 'textarea' }, rem('25px'), rem('25px'))};
     border-radius: ${radius.mobile};
     margin-bottom: ${rem('20px')};
+    border: 2px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
   }
 
   @media (min-width: 421px) {
-    font-size: ${rem('18px')};
+    font-size: ${fontSize.desktop};
     height: ${ifProp({ type: 'textarea' }, 'auto', rem('60px'))};
     padding-top: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
     padding-bottom: ${ifProp({ type: 'textarea' }, rem('19px'), rem('19px'))};
     padding-left: ${ifProp({ type: 'textarea' }, rem('30.5px'), rem('30.5px'))};
     border-radius: ${radius.desktop};
     margin-bottom: ${rem('30px')};
+    border: 3px solid ${ifProp('invalid', palette('danger', 2), palette('grayscale', 3))};
   }
 `
 

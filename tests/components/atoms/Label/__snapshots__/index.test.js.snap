@@ -2,7 +2,7 @@
 
 exports[`should render a label 1`] = `
 <label
-  className="sc-bdVaJa fvesD"
+  className="s1cupmrt-0 eccKvY"
 >
   Hello Jest!
 </label>

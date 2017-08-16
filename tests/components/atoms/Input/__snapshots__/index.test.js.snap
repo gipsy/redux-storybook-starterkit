@@ -2,7 +2,7 @@
 
 exports[`<Input /> renders with invalid as prop 1`] = `
 <input
-  className="sc-htpNat gFBKYS"
+  className="s18s8jm-2 hjnHxf"
   height={50}
   type="text"
 />

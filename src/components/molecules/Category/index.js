@@ -110,8 +110,8 @@ Category.propTypes = {
   children: PropTypes.string,
   reverse: PropTypes.bool,
   children: PropTypes.node,
-  width: PropTypes.integer,
-  height: PropTypes.integer,
+  width: PropTypes.number,
+  height: PropTypes.number,
 }
 
 export default Category

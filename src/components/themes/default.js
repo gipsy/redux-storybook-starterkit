@@ -8,8 +8,13 @@ export const webfontLoaderConfig = {
   }
 };
 
-export const responsiveRadiuses = {
+export const responsiveBorderRadiuses = {
   mobile: '1px',
+  desktop: '3px',
+}
+
+export const responsiveBorderWidths = {
+  mobile: '2px',
   desktop: '3px',
 }
 
@@ -21,6 +26,16 @@ export const responsiveFontSizes = {
 export const responsiveHeaderHeights = {
   mobile: rem('40px'),
   desktop: rem('50px'),
+}
+
+export const responsiveButtonHeights = {
+  mobile: rem('50px'),
+  desktop: rem('60px'),
+}
+
+export const responsiveButtonPaddings = {
+  mobile: rem('16px'),
+  desktop: rem('19px'),
 }
 
 const theme = {}

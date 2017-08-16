@@ -2,6 +2,6 @@
 
 exports[`<Link /> renders with palette: primary as prop 1`] = `
 <a
-  className="sc-bwzfXH cPzigO"
+  className="t9uq8z-1 gyduPh"
 />
 `;

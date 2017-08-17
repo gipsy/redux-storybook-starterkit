@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Field /> renders with label and input when type is checkout 1`] = `
+<styled.div>
+  <Input
+    aria-describedby="nameError"
+    height={50}
+    id="name"
+    name="name"
+    type="radio"
+  />
+  <styled.label
+    htmlFor="name"
+  >
+    foo label
+  </styled.label>
+</styled.div>
+`;
+
+exports[`<Field /> renders with label and input when type is checkout 2`] = `
+<styled.div>
+  <Input
+    aria-describedby="nameError"
+    height={50}
+    id="name"
+    name="name"
+    type="checkbox"
+  />
+  <styled.label
+    htmlFor="name"
+  >
+    foo label
+  </styled.label>
+</styled.div>
+`;

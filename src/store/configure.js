@@ -1,5 +1,6 @@
 // https://github.com/diegohaz/arc/wiki/Redux-modules
 import { createStore, applyMiddleware, compose } from 'redux'
+import { responsiveStoreEnhancer } from 'redux-responsive'
 import createSagaMiddleware from 'redux-saga'
 import { isDev, isBrowser } from '~/src/config'
 import middlewares from '~/src/store/middlewares'
@@ -16,12 +17,12 @@ const configureStore = (initialState, services = {}) => {
   const enhancers = [
     applyMiddleware(
       ...middlewares,
-      sagaMiddleware
+      sagaMiddleware,
     ),
     devtools(),
   ]
 
-  const store = createStore(reducer, initialState, compose(...enhancers))
+  const store = createStore(reducer, initialState, compose(responsiveStoreEnhancer, ...enhancers))
   let sagaTask = sagaMiddleware.run(sagas, services)
 
   if (module.hot) {

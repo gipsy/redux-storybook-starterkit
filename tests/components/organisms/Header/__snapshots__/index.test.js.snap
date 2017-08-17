@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders with all allowed props 1`] = `
+<styled.div
+  className="scnd7z-0 jySewm"
+  id="test"
+  palette="primary"
+  reverse={true}
+>
+  <styled.div>
+    <Hamburger />
+  </styled.div>
+</styled.div>
+`;

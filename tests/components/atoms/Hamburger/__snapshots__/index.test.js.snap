@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hamburger /> renders props 1`] = `
+<span
+  className="s185djk0-0 cVrnen"
+>
+  <styled.span />
+  <styled.span />
+  <styled.span />
+</span>
+`;

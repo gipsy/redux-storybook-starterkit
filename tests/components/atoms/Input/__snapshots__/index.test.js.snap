@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> renders with invalid as prop 1`] = `
+<input
+  className="s18s8jm-2 hjnHxf"
+  height={50}
+  type="text"
+/>
+`;

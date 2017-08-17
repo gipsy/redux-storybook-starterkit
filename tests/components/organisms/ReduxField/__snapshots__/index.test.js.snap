@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReduxField /> renders with all allowed props 1`] = `
+<Field
+  error="Invalid"
+  invalid={true}
+  label="test"
+  name="test"
+  placeholder="test"
+  type="text"
+/>
+`;

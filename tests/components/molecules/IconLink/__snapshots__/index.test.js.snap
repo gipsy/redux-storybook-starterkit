@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconLink /> renders with all allowed props 1`] = `
+<Link
+  id="test"
+  palette="primary"
+  reverse={true}
+  to="test"
+>
+  <styled.span
+    responsive={true}
+  >
+    test
+  </styled.span>
+  <Styled(Icon)
+    hasText={true}
+    height={50}
+    icon="path/to/icon"
+    palette="primary"
+    responsive={true}
+    reverse={true}
+    right={true}
+  />
+</Link>
+`;

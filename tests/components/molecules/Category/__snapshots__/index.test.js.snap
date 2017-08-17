@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Category /> renders with all allowed props 1`] = `
+<Link
+  id="test"
+  palette="primary"
+  reverse={true}
+>
+  <styled.div>
+    <Styled(Icon)
+      height={26}
+      icon="path/to/icon"
+      palette="primary"
+      responsive={true}
+      reverse={true}
+      width={46}
+    />
+    <styled.span>
+      test
+    </styled.span>
+  </styled.div>
+</Link>
+`;

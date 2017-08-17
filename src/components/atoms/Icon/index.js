@@ -14,8 +14,6 @@ const Wrapper = styled.span`
   display: inline-block;
   font-size: ${fontSize};
   color: ${ifProp('palette', palette({ grayscale: 0 }, 1), 'currentcolor')};
-  width: 1em;
-  height: 1em;
   margin: 0.1em;
   box-sizing: border-box;
 

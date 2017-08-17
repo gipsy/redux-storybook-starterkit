@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a label 1`] = `
+<label
+  className="s1cupmrt-0 eccKvY"
+>
+  Hello Jest!
+</label>
+`;

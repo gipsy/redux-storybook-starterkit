@@ -2,32 +2,47 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { size } from 'styled-theme'
+import { size, palette } from 'styled-theme'
+
+import { responsiveHeaderHeights as headerHeight } from '~/src/components/themes/default'
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 3.75rem;
   min-height: 100vh;
   box-sizing: border-box;
-  @media screen and (max-width: 640px) {
-    padding-top: 3.25rem;
+
+  @media screen and (max-width: 420px) {
+    padding-top: ${headerHeight.mobile}
+  }
+
+  @media screen and (min-width: 421px) {
+    padding-top: ${headerHeight.desktop}
   }
 `
 
 const Header = styled.header`
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 999;
-`
+  border-bottom: 2px solid ${palette('primary', 0)};
 
-const Hero = styled.section``
+  @media screen and (max-width: 420px) {
+    height: ${headerHeight.mobile};
+  }
+
+  @media screen and (min-width: 421px) {
+    height: ${headerHeight.desktop};
+  }
+`
 
 const Content = styled.section`
   width: 100%;
   box-sizing: border-box;
-  margin: 2rem auto;
+  margin: 0 auto;
   max-width: ${size('maxWidth')};
 `
 
@@ -39,7 +54,6 @@ const PageTemplate = ({ header, hero, children, footer, ...props }) => {
   return (
     <Wrapper {...props}>
       <Header>{header}</Header>
-      {hero && <Hero>{hero}</Hero>}
       <Content>{children}</Content>
       <Footer>{footer}</Footer>
     </Wrapper>
@@ -48,8 +62,7 @@ const PageTemplate = ({ header, hero, children, footer, ...props }) => {
 
 PageTemplate.propTypes = {
   header: PropTypes.node.isRequired,
-  hero: PropTypes.node,
-  footer: PropTypes.node.isRequired,
+  footer: PropTypes.node,
   children: PropTypes.any.isRequired,
 }
 

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div
+  className="s1tka1h4-0 jBwvUr"
+>
+  <header
+    className="s1tka1h4-1 vhBJz"
+  >
+    <div
+      className="scnd7z-0 jySewm s1ow7xdi-0 yysEl"
+    >
+      <div
+        className="scnd7z-1 gpyZIN"
+      >
+        <span
+          className="s185djk0-0 isQUSV"
+        >
+          <span
+            className="s185djk0-1 knvZlA"
+          />
+          <span
+            className="s185djk0-1 knvZlA"
+          />
+          <span
+            className="s185djk0-1 knvZlA"
+          />
+        </span>
+      </div>
+    </div>
+  </header>
+  <section
+    className="s1tka1h4-2 kQfrHL"
+  >
+    <h1
+      className="h1hkui-0 eISGLG"
+    >
+      Where is the company based?
+    </h1>
+    <div
+      className="s11en7sr-1 kFAILu"
+    >
+      <input
+        aria-describedby="nameError"
+        className="s18s8jm-2 eAKhcq"
+        height={50}
+        id="name"
+        name="name"
+        placeholder="enter you text here"
+        type="text"
+      />
+    </div>
+    <button
+      className="gdfyvv-2 iWIvIi"
+      height={50}
+      onClick={[Function]}
+      type="button"
+    >
+      Next
+    </button>
+  </section>
+  <footer
+    className="s1tka1h4-3 fXJNHB"
+  />
+</div>
+`;

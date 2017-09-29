@@ -1,5 +1,5 @@
 {
-  "name": "@getdinghy/design-system",
+  "name": "",
   "version": "0.0.1",
   "private": true,
   "main": "dist/server",
@@ -25,7 +25,7 @@
     "prebuild": "npm run build:clean && npm run build:copy",
     "build": "npm run env:prod -- webpack",
     "bootstrap": "lerna bootstrap --concurrency 1 --npm-client=\"yarn\" --hoist && node private/scripts/hoist_internals.js",
-    "build-packs": "lerna exec --scope '@getdinghy/*' --parallel -- private/scripts/build_packs.sh packs",
+    "build-packs": "lerna exec --scope '*' --parallel -- private/scripts/build_packs.sh packs",
     "prepublish": "_node private/scripts/prepublish_components.js",
     "publish-components": "lerna publish"
   },

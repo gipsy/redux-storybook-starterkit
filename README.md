@@ -5,7 +5,7 @@
 ## Development
 
 ```
-git clone git@github.com:getdinghy/design_system.git
+git clone git@github.com:gipsy/redux-storybook-starterkit.git
 cd design_system
 yarn
 npm start:dev
@@ -223,10 +223,10 @@ We are using heroku for realtime global deployment. `postinstall` script runs th
 
 ## Demo
 
-Application is running on: [https://getdinghy.github.io/storybook](https://getdinghy.github.io/storybook)
+Application is running on: [https://gipsy.github.io/storybook)
 
 ## Contributing
 
 ## License
 
-MIT © [GetDinghy](https://github.com/getdinghy)
+MIT © [gipsy](https://github.com/gipsy)

@@ -28,8 +28,8 @@ function loadStories() {
 }
 
 setOptions({
-  name: 'Dinghy Design System',
-  url: 'https://github.com/getdinghy/design_system',
+  name: 'Redux Starter Kit',
+  url: 'https://github.com/gipsy/redux-storybook-starterkit',
   goFullScreen: false,
   leftPanelHierarchy: true,
   sidebarAnimations: true,

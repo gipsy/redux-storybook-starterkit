@@ -6,7 +6,7 @@ const glob = require('glob');
 const symlink = require('symlink-dir');
 const log = require('npmlog');
 
-const targetPath = path.join(__dirname, '../..', 'node_modules', '@getdinghy');
+const targetPath = path.join(__dirname, '../..', 'node_modules', '@');
 const prefix = 'hoist-internals';
 const cwd = path.join(__dirname, '../..');
 
@@ -63,7 +63,7 @@ const task = getLernaPackages()
         }))
         .filter(({ packageJson }) => !packageJson.private)
         .map(({ sourcePath, packageJson }) =>
-          Promise.resolve(packageJson.name.replace('@getdinghy/', ''))
+          Promise.resolve(packageJson.name.replace('@/', ''))
             .then(packageName => {
               log.silly(prefix, 'found package name', packageName);
               return path.join(targetPath, packageName);
@@ -89,7 +89,7 @@ const task = getLernaPackages()
   .then(locations =>
     Promise.all(
       locations
-        .map(location => path.join(location, 'node_modules', '@getdinghy'))
+        .map(location => path.join(location, 'node_modules', '@'))
         .map(
           passingLog(removePath => {
             log.verbose(prefix, 'removing ', removePath);
